@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CRM</title>
+    <!--Bootstrap 5 CSS--->
+    <link rel="stylesheet" type="text/css" href="../../assets/Bootstrap5/css/bootstrap.css" />
+
+    <!--Bootstrap 5 JS--->
+    <script type="text/javascript" src="../../assets/Bootstrap5/js/bootstrap.bundle.min.js"></script>
+
+    <!--Bootstrap Icons-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css" />
+
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/de952d599f.js" crossorigin="anonymous"></script>
+
+    <!--datatables CSS--->
+    <link rel="stylesheet" type="text/css" href="../../assets/datatables/css/datatables.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../assets/datatables/css/jquery.dataTables.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../assets/datatables/css/buttons.dataTables.min.css" />
+
+    <!--Datatables js-->
+    <script type="text/javascript" src="../../assets/js/jquery-3.3.1.js"></script>
+    <script type="text/javascript" src="../../assets/js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" src="./datatable/datatable.js"></script>
+    <script type="text/javascript" src="../../assets/js/dataTables.responsive.min.js"></script>
+
+    <!--Datatable dropdown----->
+    <script type="text/javascript" src="../../assets/js/datatables.pdfmake.min.js"></script>
+    <script type="text/javascript" src="../../assets/js/dataTables.buttons.min.js"></script>
+    <script type="text/javascript" src="../../assets/js/datatables.vfs_fonts.js"></script>
+    <script type="text/javascript" src="../../assets/js/datatables.jszip.min.js"></script>
+    <script type="text/javascript" src="../../assets/js/buttons.html5.min.js"></script>
+    <script type="text/javascript" src="../../assets/js/buttons.print.min.js"></script>
+
+    <!--Dropdown select-->
+    <link rel="stylesheet" href="../../assets/Bootstrap5/css/bootstrap-select.min.css" />
+    <script src="../../assets/Bootstrap5/js/bootstrap-select.min.js"></script>
+
+    <!--summernote_textarea-->
+    <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-lite.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-lite.min.js"></script>
+
+    <!-- CSS -->
+    <!-- validation -->
+    <script src="https://Login.loyalwings.com/assets/js/formValidation.min.js"></script>
+    <script src="https://Login.loyalwings.com/assets/js/bootstrap_validation.min.js"></script>
+    <link rel="stylesheet" href="../../assets/css/style.css" />
+    <style>
+        body {
+            font-family: Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
+        }
+
+        .help-block {
+            margin-left: 10px;
+            color: red;
+        }
+
+        .space {
+            padding: 10px 13px;
+            font-size: 13px;
+        }
+
+        .chooseexcfle {
+            padding: 10px;
+            height: 50px;
+        }
+
+        .blueclr {
+            color: rgb(93, 134, 245);
+        }
+
+        .align1 {
+            margin-left: -20px;
+        }
+
+        .left-space {
+            margin-left: 15px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container-fluid tblcontainer1" style="padding-right: 40px !important;">
+        <div class="row left-space">
+            <div class="col-md-12">
+                <div style="font-size: 18px !important ; ">Import product</div>
+            </div>
+        </div>
+        <div class="row left-space">
+            <div class="col-md-12">
+                <button type="button" class="hrbtns contractbtn   "
+                    style="margin-left: 1px !important; font-size: 16px !important;">DOWNLOAD
+                    SAMPLE</button>
+            </div>
+        </div>
+        <br>
+        <hr class="fileline mb-0 mt-1">
+        <br>
+        <div class="row align1">
+            <div class="col-md-12" style="padding-left: 16px !important; text-align: justify;">
+                <ul>
+                    <li class="text-danger">1. The column with the symbol "*" is required to enter, Column "Unit",
+                        "Commodity Group", "Sub group" can enter "ID" or Code of type</li>
+                    <li class="text-danger"> 2. The column "Tax", enter "ID" of tax or "tax name"</li>
+                    <li class="text-danger">3. Format excel file (type : text) before entering value.</li>
+                    <li class="text-danger"> 4. Tags are separated by "," example (tag name 1, tag name 2, tag name 3)
+                    </li>
+
+            </div>
+        </div>
+        <br>
+        <div class="impttble" style="margin-left: 28px !important;">
+            <div class="">
+                <div class="table-responsive">
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+
+                                <td> <span class="aster">*</span> Commodity Code</td>
+                                <td> <span class="aster">*</span> Commodity Name </td>
+                                <td>Commodity Barcode</td>
+                                <td>SKU code</td>
+                                <td>SKU Name</td>
+                                <td>Tags</td>
+                                <td>Description</td>
+                                <td>Commodities </td>
+                                <td>Unit </td>
+                                <td> <span class="aster">*</span>Commodity group</td>
+                                <td>Sub group</td>
+                                <td>Profit rate</td>
+                                <td>Purchase Price </td>
+                                <td>Sale price</td>
+                                <td>Tax </td>
+                                <td>Origin </td>
+                                <td>Style</td>
+                                <td>Model</td>
+                                <td>Size</td>
+                                <td>Color</td>
+                                <td>Warranty ( month )</td>
+                                <td>Minimum inventory</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+
+
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <br>
+        <hr class="fileline">
+        <div class="row left-space">
+            <div class="col-md-3">
+
+                <div class="purchasegrp">
+                    <label for="sub" class="purchaseinfo"> <span class="aster">*</span>Choose excel File</label>
+                    <input type="file" name="Subject" class="form-control purchaseselect excfle">
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row " style="margin-left: 13PX !important;">
+            <div class="col-md-3">
+                <button type="button" class="hrbtns contractbtn   ">IMPORT</button>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container-fluid tblcontainer1" style="padding-right: 40px !important;">
+        <div class="row mt-2">
+            <div class="col-md-12">
+                <h4 style="font-size: 18px !important; margin-left: 28px !important; ">
+                    Import variation product</h4>
+            </div>
+        </div>
+        <div class="row left-space ">
+            <div class="col-md-12 ">
+                <button type="button" class="hrbtns contractbtn   mt-2 "
+                    style="margin-left: 1px !important; font-size: 16px !important;">DOWNLOAD
+                    SAMPLE</button>
+            </div>
+        </div>
+        <br>
+        <hr class="fileline mt-2 mb-1">
+        <br>
+
+        <div class="row ">
+            <div class="col-md-12">
+                <ul>
+                    <li class="text-danger" style="text-align: justify;">1. Import variation product function allows you
+                        to import the variation
+                        product of a predefined product in case you create a product with manual variation outside the
+                        management screen but cannot create it (this is the case you declare properties from variation,
+                        and from these properties, too many variation products are generated, and the system cannot
+                        afford to generate all these variations, so the import function below must be used)</li>
+                    <li class="text-danger">2. To perform import product variation
+                    </li>
+                    <li class="text-danger" style="text-align: justify;"> From the properties declared for the product
+                        variation (width:10,20,
+                        height:30,40,lenght:40,50), you need to determine what combinations of variation products will
+                        be generated from these above attribute</li>
+                    <p>
+                        product 1: width:10; height:30; length:40<br>
+                        product 2: width:10; height:30; length:50<br>
+                        product 3: width:10; height:40; length:40<br>
+                        product 4: width:10; height:40; length:50<br>
+                        product 5: width:20; height:30; length:40<br>
+                        product 6: width:20; height:30; length:50<br>
+                        product 7: width:20; height:40; length:40<br>
+                        product 8: width:20; height:40; length:50<br>
+                    </p>
+                    <a href="" target="_blank">How to generate a list of product variations using Excel.</a>
+                    <li class="text-danger">4.Download the sample file and enter the information in the template</li>
+                    <li class="text-danger">5. <a href="" target="_blank" class="blueclr"> Parent ID: id of the parent
+                            product; you can see it on the link on the product detail page; it is a number.</li>
+                    <li class="text-danger" style="text-align: justify;">6. <a href="" target="_blank"
+                            class="blueclr">Attributes: is a group of
+                            attributes of the product, in which "name":"replaces with attribute name",
+                            "option":"replaces with attribute value", and the same goes for the rest of the product's
+                            attributes. Products</a></li>
+                    <li class="text-danger" style="text-align: justify;">7.Need to ensure the accuracy of the data
+                        before importing to the system;
+                        after successful import, you can see the list of variations outside the management screen or in
+                        the product details screen, variations tab.</a></li>
+                    <li class="text-danger" style="text-align: justify;">8. If your excel file has many lines of data,
+                        we recommend you split the
+                        file into smaller files (maybe 200 lines per file) to ensure the file is successfully imported
+                        into the system.</li>
+            </div>
+        </div>
+        <div class="impttble " style="margin-left: 18px !important;">
+            <div class="ms-2">
+                <div class="table-responsive">
+                    <table class="table table-bordered ">
+                        <thead>
+                            <tr>
+                                <td> <span class="aster">*</span> Parent ID</td>
+                                <td><span class="aster">*</span> Attribute</td>
+
+
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>-</td>
+                                <td>-</td>
+
+
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="row  " style="margin-left: 17px !important;">
+            <div class="col-md-3">
+                <div class="purchasegrp">
+                    <label for="sub" class="purchaseinfo"> <span class="aster">*</span>Choose excel File</label>
+                    <input type="file" name="Subject" class="form-control purchaseselect excfle">
+                </div>
+            </div>
+        </div>
+        <div class="row " style="margin-left: 13PX !important;">
+            <div class="col-md-2">
+                <button type="button" class="hrbtns contractbtn   ">IMPORT</button>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>

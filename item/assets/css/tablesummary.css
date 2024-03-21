@@ -1,0 +1,216 @@
+body{
+	font-family:var(--primary-font);
+}
+.theadrow{
+	background:var(--tablehead-color) ;
+	font-weight:normal;
+	font-size:var(--head-font);
+	color:var(--tablehead-text-color);
+}
+.rw-class{
+	color:var(--tabletext-color) ;
+}
+.sp-class{
+	color:var(--black);
+}
+.date-class{
+	color:var(--red);
+}
+.heading{
+	font-size:var(--heading);
+}
+.heading-start{
+	font-size:var(--head-font);
+}
+.heading-progress{
+	color:var(--tabletext-color);
+	font-size:var(--head-font);
+}
+.heading-success{
+	color:var(--green);
+	font-size:var(--head-font);
+}
+.heading-wait{
+	color:var(--dark-green);
+	font-size:var(--head-font);
+}
+/* .col-md-2{
+	border-bottom:1px solid #f0f0f0;
+	border-right:1px solid #f0f0f0;
+	min-height:1px ;
+	padding:3px;
+	border-top:1px solid #f0f0f0 ;
+} */
+.heading-1{
+	font-size:var(--heading);
+}
+.task{
+	font-size:var(--button-font);
+}
+.conatiner-fluid{
+	max-width:100%;
+	margin:40px;
+}
+.btn-outline-primary{
+	font-size:20px;
+}
+.dropdown-menu{
+  background-color: transparent;
+  border: transparent;
+  border: none;
+}
+.dropdown-menu .dropdown-item > li > a:hover {
+  background-image: none;
+  background-color: #000 !important;
+   display: inline-block;
+}
+td{
+	font-size:var(--head-font);
+	padding:30px;
+}
+.medium-cl{
+	color:blue;
+}
+td:hover{
+	background:var(--white);
+}
+#button{
+	font-size:var(--button-font);
+}
+/* #button:hover{
+	background:transparent;
+	color:var(--tabletext-color);
+} */
+#button:focus{
+	outline:none !important;
+	background:transparent;
+	box-shadow: none;
+	color:var(--tabletext-color);
+}
+/* .sp-class1{
+	color:var(--grey);
+}
+.sp-class2{
+	color:var(--green);
+}
+.sp-class3{
+	color:var(--red);
+} */
+.black{
+	color:var(--black);
+}
+.header-effect{
+	visibility: hidden;
+	margin-bottom:-4px;
+}
+td:hover .header-effect{
+	visibility:visible ;
+}
+input[type=checkbox]{
+	cursor:pointer;
+}
+table#example.dataTable tbody tr:hover {
+  background-color: white;
+}
+
+/**project summary**/
+.heading-cancel{
+	color:var(--grey);
+	font-size:var(--head-font);
+}
+.heading-hold{
+	color:var(--red);
+	font-size:var(--head-font);
+}
+.date-class1{
+	color:var(--black);
+}
+.sp-class-primary{
+	color:var(--tabletext-color);
+}
+
+/**detailed-overview**/
+.sp-class-grey{
+	color:var(--grey);
+}
+.btn-outline-secondary:focus{
+	color:red;
+}
+#button1{
+	font-size:var(--button-font);
+}
+#button1:hover{
+	background:transparent;
+	color:var(--grey);
+}
+#button:focus{
+	outline:none !important;
+	background:transparent;
+	box-shadow: none;
+	color:var(--grey);
+}
+#button2{
+	font-size:var(--button-font);
+}
+#button2:hover{
+	background:transparent;
+	color:var(--red);
+}
+#button:focus{
+	outline:none !important;
+	background:transparent;
+	box-shadow: none;
+	color:var(--red);
+}
+#button-green{
+	font-size:var(--button-font);
+}
+#button-green:hover{
+	background:transparent;
+	color:var(--green);
+}
+#button-green:focus{
+	outline:none !important;
+	background:transparent;
+	box-shadow: none;
+	color:var(--green);
+}
+.exportbtn{
+font-size:12px;
+padding-top:1px;
+border: none;
+background: none;
+
+}
+div.dt-buttons .dt-button {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    background: white;
+	border:  1px solid #b5b2b2d4!important;
+}
+
+button.dt-button:hover:not(.disabled), div.dt-button:hover:not(.disabled), a.dt-button:hover:not(.disabled), input.dt-button:hover:not(.disabled) {
+    border: 1px solid rgba(0, 0, 0, 0.3);
+   	background-color: #fff;
+	background-image:none!important;
+      
+}
+button.dt-btn-split-drop:hover {
+	border-left: none!important;
+	}
+	.dataTables_wrapper .dataTables_length select {
+		
+		padding: 6.7px !important;
+		margin-left: 6px !important;
+		border:  1px solid #b5b2b2d4!important;
+	}
+
+	.dataTables_wrapper .dataTables_filter input{
+		padding: 3.3px !important;
+	}
+	.dataTables_wrapper .dataTables_paginate .paginate_button.current, .dataTables_wrapper .dataTables_paginate .paginate_button.current:hover {
+		color: whitesmoke !important;
+		border:none !important;
+		padding: 2px 9px;
+		background-color: #03a9f4 !important;
+	}

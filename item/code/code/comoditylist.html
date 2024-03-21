@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CRM</title>
+    <!--Bootstrap 5 CSS--->
+    <link rel="stylesheet" type="text/css" href="../../assets/Bootstrap5/css/bootstrap.css" />
+
+    <!--Bootstrap 5 JS--->
+    <script type="text/javascript" src="../../assets/Bootstrap5/js/bootstrap.bundle.min.js"></script>
+
+    <!--Bootstrap Icons-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css" />
+
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/de952d599f.js" crossorigin="anonymous"></script>
+
+    <!--datatables CSS--->
+    <link rel="stylesheet" type="text/css" href="../../assets/datatables/css/datatables.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../assets/datatables/css/jquery.dataTables.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../assets/datatables/css/buttons.dataTables.min.css" />
+
+    <!--Datatables js-->
+    <script type="text/javascript" src="../../assets/js/jquery-3.3.1.js"></script>
+    <script type="text/javascript" src="../../assets/js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" src="./datatable/datatable.js"></script>
+    <script type="text/javascript" src="../../assets/js/dataTables.responsive.min.js"></script>
+
+    <!--Datatable dropdown----->
+    <script type="text/javascript" src="../../assets/js/datatables.pdfmake.min.js"></script>
+    <script type="text/javascript" src="../../assets/js/dataTables.buttons.min.js"></script>
+    <script type="text/javascript" src="../../assets/js/datatables.vfs_fonts.js"></script>
+    <script type="text/javascript" src="../../assets/js/datatables.jszip.min.js"></script>
+    <script type="text/javascript" src="../../assets/js/buttons.html5.min.js"></script>
+    <script type="text/javascript" src="../../assets/js/buttons.print.min.js"></script>
+
+    <!--Dropdown select-->
+    <link rel="stylesheet" href="../../assets/Bootstrap5/css/bootstrap-select.min.css" />
+    <script src="../../assets/Bootstrap5/js/bootstrap-select.min.js"></script>
+
+    <!--summernote_textarea-->
+    <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-lite.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-lite.min.js"></script>
+
+    <!-- CSS -->
+    <!-- validation -->
+    <script src="https://Login.loyalwings.com/assets/js/formValidation.min.js"></script>
+    <script src="https://Login.loyalwings.com/assets/js/bootstrap_validation.min.js"></script>
+    <link rel="stylesheet" href="../../assets/css/style.css" />
+    <style>
+        html {
+            margin: 10px;
+        }
+
+        .help-block {
+            margin-left: 10px;
+            color: red;
+        }
+
+        .currency {
+            margin-top: 20px;
+
+        }
+
+        .head {
+            font-size: 18px;
+            margin: 0px;
+            margin-left: -25px;
+        }
+
+        .hrbtns {
+            font-size: 14px;
+            padding: 8px 10px;
+
+        }
+
+        .pull-right {
+            float: right;
+        }
+
+        .margintop {
+            margin-top: 15px;
+        }
+
+        .comm-code {
+            color: rgb(54, 131, 218);
+        }
+    </style>
+
+</head>
+
+<body style="margin-left: 8px !important; margin-right: 8px !important;">
+    <div class="container-fluid ">
+        <div class="row head">
+            <div class="col-lg-12">
+                <h4 style="font-size: 22px !important; margin-top: 20px !important; margin-left: 6px !important;">
+                    <i class="fa-regular fa-clone"></i>
+                    commodity list
+                </h4>
+            </div>
+
+        </div>
+
+    </div>
+    <div class="row mt-0">
+        <div class="col-md-12" style="margin-left: 2px !important; padding-right: 15px !important;">
+            <button type="submit" class="hrbtns contractbtn " onclick="showModal('model.html','Add item')">ADD</button>
+
+            <button type="submit" class="hrbtns contractbtn itemgrnbtn"
+                onclick="window.location.href = 'impotitems.html';">IMPORT ITEMS</button>
+            <button type="button" class="hrbtns hrchartsbtn"
+                onclick="window.location.href = 'openingstock.html';">IMPORT OPENING STOCK</button>
+            <button type="button" class="hrbtns hrchartsbtn" onclick="window.location.href = 'serialnum.html';">SERIAL
+                NUMBERS</button>
+
+        </div>
+    </div>
+    <div class="row mt-2 mb-0" style="padding-right: 2px !important; padding-left: 4px !important;">
+        <div class="col-md-3 mb-0">
+            <div class="purchasegrp  ">
+                <select name="group" class="form-control selectpicker " data-live-search="true" placeholder="warehouse">
+                    <option value="5">xxxxx</option>
+                    <option value="2">manufacturer</option>
+                    <option value="4">ESPADA</option>
+                    <option value="3">ZORRO</option>
+                    <option value="18">i5</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="col-md-3 mb-0">
+            <div class="purchasegrp">
+                <select class="selectpicker multiselect" data-name="name" multiple data-actions-box="true"
+                    data-live-search="true" data-none-selected-text="Commodity  ">
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                    <option value="4">Four</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                    <option value="4">Four</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                    <option value="4">Four</option>
+                    <option value="3">Three</option>
+                    <option value="4">Four</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                    <option value="4">Four</option>
+                </select>
+                </button>
+
+            </div>
+            <!--Multiselect-->
+            <script>
+                const dropdowns = document.querySelectorAll('.multiselect');
+
+                dropdowns.forEach(dropdown => {
+                    const inputBox = document.createElement('input');
+                    inputBox.type = 'hidden';
+                    inputBox.classList.add('selected-values');
+                    name = dropdown.getAttribute('data-name');
+                    inputBox.setAttribute("name", name);
+                    dropdown.after(inputBox);
+
+                    dropdown.addEventListener('change', () => {
+                        const selectedOptions = Array.from(dropdown.selectedOptions).map(option => option.value);
+                        inputBox.value = selectedOptions.join(', ');
+                    });
+                });
+            </script>
+        </div>
+
+
+        <div class="col-md-2 mb-0">
+            <div class="purchasegrp  ">
+                <select name="group" class="form-control selectpicker " data-live-search="true" placeholder="tags">
+                    <option value="0">Filtered Oil</option>
+                    <option value="1">Assunzione sales</option>
+
+                </select>
+            </div>
+        </div>
+        <div class="col-md-2 mb-0">
+            <div class="purchasegrp  ">
+                <select name="group" class="form-control selectpicker " data-live-search="true" placeholder="alerts">
+                    <option value="0">Filtered Oil</option>
+                    <option value="1">Assunzione sales</option>
+                    <option value="2">Track Itinerary Leads</option>
+                </select>
+            </div>
+        </div>
+        <div class="col-md-2 ">
+            <div class="purchasegrp  ">
+                <select name="group" class="form-control selectpicker " data-live-search="true"
+                    placeholder="can be inventory">
+                    <option value="0">Filtered Oil</option>
+                    <option value="1">Assunzione sales</option>
+                    <option value="2">Track Itinerary Leads</option>
+                </select>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12 ">
+            <div class="col-lg-3 pull-right ">
+                <div class="purchasegrps ">
+                    <input type="text" id="subject" class="form-control purchaseselects  "
+                        placeholder="Filter By Barcode">
+                </div>
+            </div>
+            <div class="col-lg-3 pull-right ">
+                <div class="margintop">
+                    <input class="form-check-input px-1 p-1 " type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        search for simple and variation product
+                    </label>
+                    <span class="notifbtn" style="background-color: black;">?</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="demo-html mt-0 ms-1" style="padding-right: 2px !important;">
+        <table id="example3" class="display dataTable display responsive nowrap  " style="width: 100%;"
+            aria-describedby="example_info">
+            <thead class="theadrow">
+                <tr>
+                    <th class="sorting" tabindex="0" aria-controls="example" rowspan="1" colspan="1"
+                        aria-label="Position: activate to sort column ascending"
+                        style="width: 30px;font-weight:normal ;">
+                        <input class="check-input px-1 p-1" type="checkbox" value="" id="flexCheckDefault">
+                    </th>
+                    <th class="sorting" tabindex="0" aria-controls="example" rowspan="1" colspan="1"
+                        aria-label="Office: activate to sort column ascending" style="width: 40px;font-weight:normal ;">
+                        Images</th>
+                    <th class="sorting" tabindex="0" aria-controls="example" rowspan="1" colspan="1"
+                        aria-label="Age: activate to sort column ascending" style="width: 10px;font-weight:normal ;">
+                        Commodity code</th>
+                    <th class="sorting" tabindex="0" aria-controls="example" rowspan="1" colspan="1"
+                        aria-label="Age: activate to sort column ascending" style="width: 40px;font-weight:normal ;">
+                        Commodity name </th>
+                    <th class="sorting" tabindex="0" aria-controls="example" rowspan="1" colspan="1"
+                        aria-label="Salary: activate to sort column ascending" style="width: 30px;font-weight:normal ;">
+                        SKU Code</th>
+                    <th class="sorting" tabindex="0" aria-controls="example" rowspan="1" colspan="1"
+                        aria-label="Salary: activate to sort column ascending" style="width: 30px;font-weight:normal ;">
+                        Group name</th>
+                    <th class="sorting" tabindex="0" aria-controls="example" rowspan="1" colspan="1"
+                        aria-label="Salary: activate to sort column ascending" style="width: 30px;font-weight:normal ;">
+                        Warehouse name</th>
+                    <th class="sorting" tabindex="0" aria-controls="example" rowspan="1" colspan="1"
+                        aria-label="Salary: activate to sort column ascending" style="width: 30px;font-weight:normal; ">
+                        Tags </th>
+                    <th class="sorting" tabindex="0" aria-controls="example" rowspan="1" colspan="1"
+                        aria-label="Age: activate to sort column ascending" style="width: 10px;font-weight:normal ;">
+                        Inventory</th>
+                    <th class="sorting" tabindex="0" aria-controls="example" rowspan="1" colspan="1"
+                        aria-label="Age: activate to sort column ascending" style="width: 40px;font-weight:normal ;">
+                        Name </th>
+                    <th class="sorting" tabindex="0" aria-controls="example" rowspan="1" colspan="1"
+                        aria-label="Salary: activate to sort column ascending" style="width: 30px;font-weight:normal ;">
+                        Sale price</th>
+                    <th class="sorting" tabindex="0" aria-controls="example" rowspan="1" colspan="1"
+                        aria-label="Salary: activate to sort column ascending" style="width: 30px;font-weight:normal ;">
+                        Purchase price</th>
+                    <th class="sorting" tabindex="0" aria-controls="example" rowspan="1" colspan="1"
+                        aria-label="Salary: activate to sort column ascending" style="width: 30px;font-weight:normal ;">
+                        Tax1 </th>
+                    <th class="sorting" tabindex="0" aria-controls="example" rowspan="1" colspan="1"
+                        aria-label="Salary: activate to sort column ascending"
+                        style="width: 30px;font-weight:normal ; text-align: left;">
+                        Tax2 </th>
+                    <th class="sorting" tabindex="0" aria-controls="example" rowspan="1" colspan="1"
+                        aria-label="Salary: activate to sort column ascending" style="width: 30px;font-weight:normal ;">
+                        Status </th>
+                    <th class="sorting" tabindex="0" aria-controls="example" rowspan="1" colspan="1"
+                        aria-label="Salary: activate to sort column ascending" style="width: 30px;font-weight:normal ;">
+                        Minimum stock</th>
+                    <th class="sorting" tabindex="0" aria-controls="example" rowspan="1" colspan="1"
+                        aria-label="Salary: activate to sort column ascending" style="width: 30px;font-weight:normal ;">
+                        Maximum stock
+                    </th>
+                    <th class="sorting" tabindex="0" aria-controls="example" rowspan="1" colspan="1"
+                        aria-label="Salary: activate to sort column ascending" style="width: 30px;font-weight:normal ;">
+                        Price after tax
+                    </th>
+                </tr>
+
+
+            </thead>
+            <tbody>
+
+                <tr class="odd">
+                    <td class="sorting rw-class"><input class="check-input px-1 p-1" type="checkbox" value=""
+                            id="flexCheckDefault"> </td>
+                    <td class="loyal"> <img src="bg.png" width="100px" height="100px"></td>
+                    <td class="sorting rw-class"><a role="button"
+                            onclick="window.location.href = 'view-page.html','view';"> 02468 </a>
+                        <br>
+                        <p class="header-effect">
+                            <a class="sp-class2" onclick="window.location.href = 'view-page.html','View';">View
+                            </a>
+                            <span class="black">|</span>
+                            <span onclick="showModal('edit-from.html','Edit item')">Edit</span>
+                            <span class="black">|</span>
+                            <span
+                                onclick="showModal('Add-opening-stock-p.html','Add opening stock ( Loofer no.5 )')">Add
+                                openning stock
+                                </a>
+                                <span class="black">|</span>
+                                <span class="sp-class3">Delete</span>
+                        </p>
+                    <td class="loyal"><a class="sp-class2">
+                            <span onclick="showModal('bag-pag.html','bag')">bag
+
+                        </a>
+                    </td>
+                    <td class="loyal"><span class="dept">02825</span></td>
+                    <td class="loyal">Raw Material </td>
+                    <td class="loyal"></td>
+                    <td class="loyal"></td>
+                    <td class="loyal">0</td>
+                    <td class="loyal">Meter</td>
+                    <td class="loyal">1,000.00</td>
+                    <td class="loyal">800.00</td>
+                    <td class="loyal"></td>
+                    <td class="loyal"></td>
+                    <td class="loyal"></td>
+                    <td class="loyal"></td>
+                    <td class="loyal"></td>
+                    <td class="loyal">1,000.00</td>
+                </tr>
+
+                <tr class="odd">
+                    <td class="sorting rw-class"><input class="check-input px-1 p-1" type="checkbox" value=""
+                            id="flexCheckDefault">
+                    </td>
+                    <td class="loyal"> <img src="bg.png" width="100px" height="100px"></td>
+                    <td class="sorting rw-class"><a role="button"
+                            onclick="window.location.href = 'view-page.html','view';"> 02468 </a>
+                        <br>
+                        <p class="header-effect">
+                            <a class="sp-class2" onclick="window.location.href = 'view-page.html';">View
+                            </a>
+                            <span class="black">|</span>
+                            <span onclick="showModal('edit-from.html')">Edit</span>
+                            <span class="black">|</span>
+                            <span
+                                onclick="showModal('Add-opening-stock-p.html','Add opening stock ( Loofer no.5 )')">Add
+                                openning stock
+                                </a>
+                                <span class="black">|</span>
+                                <span class="sp-class3">Delete</span>
+                        </p>
+                    <td class="loyal"><a class="sp-class2">
+                            <span onclick="showModal('bag-pag.html','bag')">bag
+
+                        </a>
+                    </td>
+                    <td class="loyal"><span class="dept">02825</span></td>
+                    <td class="loyal">Raw Material </td>
+                    <td class="loyal"></td>
+                    <td class="loyal"></td>
+                    <td class="loyal">0</td>
+                    <td class="loyal">Meter</td>
+                    <td class="loyal">1,000.00</td>
+                    <td class="loyal">800.00</td>
+                    <td class="loyal"></td>
+                    <td class="loyal"></td>
+                    <td class="loyal"></td>
+                    <td class="loyal"></td>
+                    <td class="loyal"></td>
+                    <td class="loyal">1,000.00</td>
+                </tr>
+
+            </tbody>
+        </table>
+    </div>
+
+
+
+    <div class="modal fade" id="modal_md" role="dialog">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close closebtn" data-bs-dismiss="modal"></button>
+                    <h5 class="modal-title"></h5>
+                </div>
+                <div class="modal-body">
+                </div>
+            </div>
+        </div>
+
+
+        <script>
+
+            $(document).ready(function () {
+
+
+                var table = $('#example3').DataTable({
+                    rowReorder: {
+                        selector: 'td:nth-child(2)'
+                    },
+                    responsive: true,
+                    dom: 'Blfrtip',
+                    buttons: [
+                        {
+                            text: 'EXPORT',
+                            extend: 'collection',
+                            buttons: ['excel', 'csv', 'pdf', 'print'],
+                            className: 'px-3'
+
+                        },
+                        {
+                            text: '<button type="button" onclick="showModal( `manupul-pop.html`,`Manipulation`)" style="font-size:12px; border:none;padding:0;background-color: inherit;">MANIPULATION</button>',
+                        },
+                        {
+                            text: '<button type="button" onclick="showModal(`export-pop.html`,`Create export file success`)" style="font-size:12px; border:none;padding:0;background-color: inherit;">EXPORT THE SELECTED ITEM</button>',
+                        },
+                        {
+                            text: '<button type="button" onclick="showModal(`selc-item-pop.html`,`Barcode Printing`)" style="font-size:12px; border:none;padding:0;background-color: inherit;">BARCODE PRINTING </button>',
+                        },
+
+                        {
+                            text: '<i class="bi bi-arrow-repeat p-1" style="font-size:12px"></i>'
+                        }   
+
+                    ]
+
+                });
+
+            });
+        </script>
+        <script type="text/javascript"
+            src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js"></script>
+
+        <script>
+            function showModal(url, title) {
+                $('#modal_md').on('shown.bs.modal', function () {
+                    $('.selectpicker').selectpicker('refresh');
+                });
+                $('#modal_md').modal('show', { backdrop: 'true' });
+                $.ajax({
+                    url: url,
+                    success: function (response) {
+                        $('#modal_md .modal-title').html(title);
+                        $('#modal_md .modal-body').html(response);
+                    }
+                });
+            }
+
+        </script>
+
+
+</body>
+
+</html>

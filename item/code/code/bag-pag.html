@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CRM</title>
+    <!--Bootstrap 5 CSS--->
+    <link rel="stylesheet" type="text/css" href="../../assets/Bootstrap5/css/bootstrap.css" />
+
+    <!--Bootstrap 5 JS--->
+    <script type="text/javascript" src="../../assets/Bootstrap5/js/bootstrap.bundle.min.js"></script>
+
+    <!--Bootstrap Icons-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css" />
+
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/de952d599f.js" crossorigin="anonymous"></script>
+
+    <!--datatables CSS--->
+    <link rel="stylesheet" type="text/css" href="../../assets/datatables/css/datatables.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../assets/datatables/css/jquery.dataTables.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../assets/datatables/css/buttons.dataTables.min.css" />
+
+    <!--Datatables js-->
+    <script type="text/javascript" src="../../assets/js/jquery-3.3.1.js"></script>
+    <script type="text/javascript" src="../../assets/js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" src="./datatable/datatable.js"></script>
+    <script type="text/javascript" src="../../assets/js/dataTables.responsive.min.js"></script>
+
+    <!--Datatable dropdown----->
+    <script type="text/javascript" src="../../assets/js/datatables.pdfmake.min.js"></script>
+    <script type="text/javascript" src="../../assets/js/dataTables.buttons.min.js"></script>
+    <script type="text/javascript" src="../../assets/js/datatables.vfs_fonts.js"></script>
+    <script type="text/javascript" src="../../assets/js/datatables.jszip.min.js"></script>
+    <script type="text/javascript" src="../../assets/js/buttons.html5.min.js"></script>
+    <script type="text/javascript" src="../../assets/js/buttons.print.min.js"></script>
+
+    <!--Dropdown select-->
+    <link rel="stylesheet" href="../../assets/Bootstrap5/css/bootstrap-select.min.css" />
+    <script src="../../assets/Bootstrap5/js/bootstrap-select.min.js"></script>
+
+    <!--summernote_textarea-->
+    <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-lite.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-lite.min.js"></script>
+    <style>
+        .line {
+            --bs-gutter-x: 0rem !important;
+        }
+
+
+        .linehr {
+            margin: 0px !important;
+        }
+
+        .vendor {
+            padding: 7px !important;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="accordion">
+        <hr class="fileline mt-0 mb-0">
+        <div class="row vendcarmt  ">
+            <div class="col-md-12 ">
+                <div class="desktop">
+                    <div class="scroll-images custml toptea">
+                        <div class="child mb-0 mt-0 ">
+                            <button class="tablinks tb-links active " type="button"
+                                onclick="openTab(event, 'profile')">Out of
+                                stock
+                            </button>
+                        </div>
+                        <div class="child mb-0 mt-0">
+                            <button class="tablinks tb-links" type="button" onclick="openTab(event, 'profile')">
+                                Expired </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-interval="false"
+                    style="height: 50px;">
+                    <div class="carousel-inner scroll-images">
+
+                        <div class="carousel-item active" style="text-align: center;">
+                            <div class="child mb-0 mt-0" style="height:auto;">
+                                <button class="tablinks active tabresact vendor" style="width:70%" type="button"
+                                    onclick="openTab(event, 'profile')"> Out of stock </button>
+                            </div>
+                        </div>
+                        <div class="carousel-item" style="text-align: center;">
+                            <div class="">
+                                <div class="child mb-0 mt-0" style="height:auto;">
+                                    <button class="tablinks tabresact vendor" style="width:70%" type="button"
+                                        onclick="openTab(event, 'profile')"> Expired</button>
+                                </div>
+                            </div>
+                        </div>
+                        <button id="prevButton" class="carousel-control-prev" style="margin-top: 10px;" type="button"
+                            data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                            <i class="bi bi-chevron-left icon" style="color:black;font-weight: bold;"></i>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+
+                        <button id="nextButton" class="carousel-control-next" style="margin-top: 10px;" type="button"
+                            data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                            <i class="bi bi-chevron-right icon" style="color:black;font-weight:bold"></i>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr class="fileline vendcarline linehr">
+        <!--member rules-->
+        <div id="profile" class="tabcontent" style="display:block">
+            <div class="demo-html mt-0">
+                <table id="example" class="display dataTable display responsive nowrap tblalign " style="width: 100%;"
+                    aria-describedby="example_info">
+                    <thead class="theadrow">
+                        <tr>
+                            <th class="sorting" tabindex="0" aria-controls="example" rowspan="1" colspan="1"
+                                aria-label="Position: activate to sort column ascending"
+                                style="width: 30px;font-weight:normal ;">ID</th>
+                            <th class="sorting" tabindex="0" aria-controls="example" rowspan="1" colspan="1"
+                                aria-label="Office: activate to sort column ascending"
+                                style="width: 40px;font-weight:normal ;">Commodity Name</th>
+                            <th class="sorting" tabindex="0" aria-controls="example" rowspan="1" colspan="1"
+                                aria-label="Age: activate to sort column ascending"
+                                style="width: 10px;font-weight:normal ;">
+                                Expiry Date</th>
+                            <th class="sorting" tabindex="0" aria-controls="example" rowspan="1" colspan="1"
+                                aria-label="Age: activate to sort column ascending"
+                                style="width: 40px;font-weight:normal ;">
+                                Lot number </th>
+                            <th class="sorting" tabindex="0" aria-controls="example" rowspan="1" colspan="1"
+                                aria-label="Salary: activate to sort column ascending"
+                                style="width: 30px;font-weight:normal ;">Qty </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <!-- modal -->
+    <script>
+        function showModal(url, title) {
+            $('#modal_md').on('shown.bs.modal', function () {
+                $('.selectpicker').selectpicker('refresh');
+            });
+            $('#modal_md').modal('show', { backdrop: 'true' });
+            $.ajax({
+                url: url,
+                success: function (response) {
+                    $('#modal_md .modal-title').html(title);
+                    $('#modal_md .modal-body').html(response);
+                }
+            });
+        }
+    </script>
+    <script>
+        function opentab(evt, tabName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(tabName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+    </script>
+    <script>
+        $(document).ready(function () {
+
+
+            var table = $('#example').DataTable({
+                rowReorder: {
+                    selector: 'td:nth-child(2)'
+                },
+                responsive: true,
+                dom: 'Blfrtip',
+                buttons: [
+                    {
+                        text: 'EXPORT',
+                        extend: 'collection',
+                        buttons: ['excel', 'csv', 'pdf', 'print'],
+                        className: 'px-3'
+
+                    }
+
+                ]
+
+            });
+
+        });
+    </script>
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js"></script>
+    <script type="text/javascript">
+        function Export() {
+            html2canvas(document.getElementById('example'), {
+                onrendered: function (canvas) {
+                    var data = canvas.toDataURL();
+                    var docDefinition = {
+                        content: [{
+                            image: data,
+                            width: 500
+                        }]
+                    };
+                    pdfMake.createPdf(docDefinition).download("Table.pdf");
+                }
+            });
+        }
+    </script>
+
+
+
+
+    <script>
+        function openTab(evt, tabName) {
+            // Declare all variables
+            var i, tabcontent, tablinks;
+
+            // Get all elements with class="tabcontent" and hide them
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+
+            // Get all elements with class="tablinks" and remove the class "active"
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+
+            // Show the current tab, and add an "active" class to the button that opened the tab
+            document.getElementById(tabName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+        var carousel = document.getElementById("carouselExampleIndicators");
+
+        carousel.addEventListener("slid.bs.carousel", function (event) {
+            var activeSlideIndex = event.to;
+            if (activeSlideIndex === 0) {
+
+                openTab(event, 'profile');
+
+            }
+
+
+        });
+
+
+
+    </script>
+
+</body>
+
+</html>

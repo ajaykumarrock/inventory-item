@@ -1,0 +1,324 @@
+
+/* for download butrton */
+
+.tab-content{
+    background-color: #ffffff!important;
+}
+.acceptedd{
+    background-color: #84c529!important;
+    color: white;
+    border: 1px solid #84c529!important;
+    padding: 4px 14px;
+    font-size: 15px;
+    text-align: center;
+    float: right;
+    margin-left: 5px;
+
+}
+/* for x */
+.x{
+    border: 1px solid gray;
+    padding: 1rem;
+    width: 55%;
+    height: 25rem;
+
+}
+.trprimry{
+    background-color: #314e73;
+    color: white;
+}
+.thcolor{
+    color:  #314e73;
+    font-weight: 200;
+}
+.y{
+
+    padding-right: 8px;
+    width: 45%;
+    height: 20rem;
+
+}
+.yy{
+  
+    margin-left: 15px;
+    border-top: 1px solid gray;
+}
+.table .personlinfo{
+    border: none;
+}
+/* for textarea tab */
+.textreaa{
+    border: 1px solid black;
+    width: 400px;
+    height: 200px;
+
+}
+.popbtn{
+    color: #ffffff;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px;
+    background-color: #03a9f4;
+    text-decoration: none;
+    font-size: 15px;
+    border: none;
+    font-weight: 400px; 
+}
+
+.popbtn:hover{
+    background-color: #4881b6;
+    color: white;
+}
+
+/* for icon filter & angelleft */
+/*.taskbtn{
+    float: right;
+    margin: 2px;
+    border-radius: 5px;
+    color: #696969ee;
+    border: 1px solid #e6e9eb;
+}*/
+.swbtn{
+    color: #415164;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px;
+    background-color: #f1f5f7;
+    font-size: 15px;
+    border: none;
+    
+}
+.swbtn:hover{
+    background-color: #ccc;
+
+}
+/* for bar icon  */
+.taskbtn1{
+    float: right;
+    padding: 5px;
+    margin: 2px;
+    border-radius: 5px;
+    background-color: #f1f5f7;
+    color: #696969ee;
+    border: 1px solid #e6e9eb;
+}
+
+
+.acordnbody{
+    width: 100%;
+    height: 300px;
+
+}
+/* for progrbar row*/
+
+.proraw1{
+   box-shadow: 1px 0px 3px; 
+   text-align: left;
+   column-gap: 2rem;
+}
+
+
+/* for option button */
+.inr{
+    border: none;
+    width: 50%;
+    background-color: white;    
+}
+.yer1:hover{
+    background-color:#008ece;
+   
+}
+/* for option raw  (optrw) */
+.optrw{
+    border: none;
+}
+
+/* for box row  */
+.bxrw{
+    border: none;
+    box-shadow: 1px 0px 3px;
+    
+}
+
+/* for five box  like rp352000.00 */
+.progrssbox0{
+    margin: 25px;
+    border: 1px solid #dce1ef;
+    border-radius: 4px;
+    box-shadow: 0px 0px 0.8px 0px;
+    height: 4rem;
+    background-color: #f9fafc;
+   
+}
+/* for progress color */
+.progrescolor1{
+    background-color: rgb(133, 133, 133);
+
+}
+.progrescolor2{
+    background-color: rgb(68, 202, 243);
+
+}
+.progrescolor3{
+    background-color: orangered;
+
+}
+.progrescolor4{
+   background-color:initial;
+
+}
+.progrescolor5{
+    background-color: rgb(36, 228, 78);
+
+}
+.progrescolor2{
+    background-color: rgb(68, 202, 243);
+   
+
+}
+
+.frsent{
+    font-size: 13px;
+    color: #008ece;
+}
+.frexpird{
+    font-size: 13px;
+    
+}
+
+.conntr1{
+    margin-right: 100px;
+    padding: 20px;
+    /* border: 1px solid #c9c8c8; */
+    border-radius: 5px;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 0px 2px #dce1ef;
+}
+
+ .dept1{
+    color: black; border: 1px solid #bfcbd9;
+    padding: 2px 10px 7px;
+    border-radius: 4px;
+    margin-top: 5px;
+  }
+
+.bx {
+  color: #61615f;
+}
+.hdrdropdown{
+    border: none;
+    border-radius: 5px;
+}
+
+.maincls{
+    padding: 14px 24px;
+    height: auto;
+    background-color: #e3e8ee;
+}
+.contr1{  
+    border-radius: 2px;
+    padding: 4px 4px 10px;
+    height: 100%;   
+}
+
+.pdficons{
+    display: flex;
+    background-color: #e6e9eb;
+}
+
+.finlbtn{
+    background-color: #84c529;
+}
+.purchasedescription{
+    width: 100%;
+    height: 150px;
+    margin-top: 5px;
+}
+.addr{
+    font-size: 16px;
+}
+
+.table-borderless:hover{
+    background-color: #f1f1f1;
+}
+.iconss{
+    background-color: #e6e9eb;
+
+}
+
+.selecopt{
+    background-color: red;
+    width: 5px;
+}
+
+.sorting_1{
+    color:black
+}
+
+.rw-class{
+    position: relative;
+    cursor: pointer;
+}
+.row-options{
+    position:absolute;
+    visibility: hidden;
+}
+.row-options::before{
+    position: absolute;
+}
+.rw-class:hover .row-options{
+    position: relative;
+ visibility: visible;
+}
+
+.link-modal{
+    text-decoration: none;
+}
+
+.maincls{
+    padding: 10px 24px;
+}
+.contr1{
+    background-color: white;
+    border-radius: 2px;
+    padding: 4px 4px 10px;
+    height: 100%;
+}
+
+.import-ul{
+    font-size: 14px;
+}
+.hrline{
+    background-color: none;
+
+}
+.tbl-fixed {
+    overflow-y: hidden;
+    overflow-x: scroll;
+}
+.first{
+    height: 800px;
+}
+.input-group {
+  display: flex;
+  align-items: center;
+}
+
+.input-group {
+  flex-grow: 1;
+  margin-right: 10px;
+}
+
+.deleicon{
+    position:relative; margin-left:-45px; 
+}
+
+.textmove{
+    position:relative; margin-left:-25px;
+}
+.mailicn{
+    font-size: 16px !important;
+}
+.btnmb{
+    margin-bottom: 70px !important;
+}

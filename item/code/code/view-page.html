@@ -1,0 +1,1064 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CRM</title>
+    <!--Bootstrap 5 CSS--->
+    <link rel="stylesheet" type="text/css" href="../../assets/Bootstrap5/css/bootstrap.css" />
+
+    <!--Bootstrap 5 JS--->
+    <script type="text/javascript" src="../../assets/Bootstrap5/js/bootstrap.bundle.min.js"></script>
+
+    <!--Bootstrap Icons-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css" />
+
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/de952d599f.js" crossorigin="anonymous"></script>
+
+    <!--datatables CSS--->
+    <link rel="stylesheet" type="text/css" href="../../assets/datatables/css/datatables.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../assets/datatables/css/jquery.dataTables.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../assets/datatables/css/buttons.dataTables.min.css" />
+
+    <!--Datatables js-->
+    <script type="text/javascript" src="../../assets/js/jquery-3.3.1.js"></script>
+    <script type="text/javascript" src="../../assets/js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" src="./datatable/datatable.js"></script>
+    <script type="text/javascript" src="../../assets/js/dataTables.responsive.min.js"></script>
+
+    <!--Datatable dropdown----->
+    <script type="text/javascript" src="../../assets/js/datatables.pdfmake.min.js"></script>
+    <script type="text/javascript" src="../../assets/js/dataTables.buttons.min.js"></script>
+    <script type="text/javascript" src="../../assets/js/datatables.vfs_fonts.js"></script>
+    <script type="text/javascript" src="../../assets/js/datatables.jszip.min.js"></script>
+    <script type="text/javascript" src="../../assets/js/buttons.html5.min.js"></script>
+    <script type="text/javascript" src="../../assets/js/buttons.print.min.js"></script>
+
+    <!--Dropdown select-->
+    <link rel="stylesheet" href="../../assets/Bootstrap5/css/bootstrap-select.min.css" />
+    <script src="../../assets/Bootstrap5/js/bootstrap-select.min.js"></script>
+
+    <!--summernote_textarea-->
+    <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-lite.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-lite.min.js"></script>
+
+    <!-- CSS -->
+    <!-- validation -->
+    <script src="https://Login.loyalwings.com/assets/js/formValidation.min.js"></script>
+    <script src="https://Login.loyalwings.com/assets/js/bootstrap_validation.min.js"></script>
+    <link rel="stylesheet" href="../../assets/css/style.css" />
+    <style>
+        html {
+            margin: 10px;
+        }
+
+        .help-block {
+            margin-left: 10px;
+            color: red;
+        }
+
+        .currency {
+            margin-top: 20px;
+
+        }
+
+        .head {
+            font-size: 18px;
+            margin: 0px;
+            margin-left: -25px;
+        }
+
+        .hrbtns {
+            font-size: 14px;
+            padding: 8px 10px;
+
+        }
+
+        .pull-right {
+            float: right;
+        }
+
+        .margintop {
+            margin-top: 15px;
+        }
+
+        .comm-code {
+            color: rgb(54, 131, 218);
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container-fluid ">
+        <div class="col-lg-12">
+            <h4 style="font-size: 15px !important;">
+                <b>test</b>
+            </h4>
+        </div>
+        <hr class="fileline">
+
+        <div class="col-lg-12">
+            <h4 style="font-size: 17px !important; color: red;">
+                General Details
+            </h4>
+        </div>
+        <hr class="mb-4" style="color: red; ">
+
+        <div class="row tb-margin" style="font-size: 14px !important;">
+            <div class="col-md-6 pull-left">
+                <table class="details-table table table-striped">
+                    <tbody>
+                        <tr class="project-overview greyback">
+                            <td class="viewjobft"><b>Commodity Code</b></td>
+                            <td class="viewjobft"> </td>
+                        </tr>
+                        <tr class="project-overview">
+                            <td class="viewjobft"><b>Commodity Name</b></td>
+                            <td class="viewjobft"></td>
+                        </tr>
+                        <tr class="project-overview">
+                            <td class="viewjobft"><b> Commodity group</b></td>
+                            <td class="viewjobft"> </td>
+                        </tr>
+                        <tr class="project-overview">
+                            <td class="viewjobft"><b> Commodity Barcode</b></td>
+                            <td class="viewjobft"></td>
+                        </tr>
+                        <tr class="project-overview">
+                            <td class="viewjobft"><b>SKU code</b></td>
+                            <td class="viewjobft"></td>
+                        </tr>
+                        <tr class="project-overview">
+                            <td class="viewjobft"><b>SKU Name</b></td>
+                            <td class="viewjobft"></td>
+                        </tr>
+                        <tr class="project-overview">
+                            <td class="viewjobft"><b>Tax 1</b></td>
+                            <td class="viewjobft">GST</td>
+                        </tr>
+                        <tr class="project-overview">
+                            <td class="viewjobft"><b>Tax 2</b></td>
+                            <td class="viewjobft"></td>
+                        </tr>
+                        <tr class="project-overview">
+                            <td class="viewjobft"><b>Tags</b> </td>
+                            <td class="viewjobft"><span style="text-transform: lowercase;">tag</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-md-6 pull-right">
+                <div>
+                    <img class="images_w_table"
+                        src="https://perfexmodules.gtssolution.site/modules/warehouse/uploads/nul_image.jpg"
+                        alt="nul_image.jpg" width="120px">
+                </div>
+
+            </div>
+        </div>
+
+
+        <div class="col-lg-12">
+            <h4 style="font-size: 15px !important;  color: red;">
+                Details
+            </h4>
+        </div>
+        <hr style="color: red;">
+        <!-- --------- -->
+
+        <div class="row tb-margin">
+            <div class="col-md-6 pull-left">
+                <table class="details-table table table-striped">
+                    <tbody>
+                        <tr class="project-overview greyback">
+                            <td class="viewjobft"><b> Origin</b></td>
+                            <td class="viewjobft"> </td>
+                        </tr>
+                        <tr class="project-overview">
+                            <td class="viewjobft"><b>Colors </b></td>
+                            <td class="viewjobft"></td>
+                        </tr>
+                        <tr class="project-overview">
+                            <td class="viewjobft"><b> Styles </b></td>
+                            <td class="viewjobft"> </td>
+                        </tr>
+                        <tr class="project-overview">
+                            <td class="viewjobft"><b> Sale price</b></td>
+                            <td class="viewjobft"> 7,000.00</td>
+                        </tr>
+                        <tr class="project-overview">
+                            <td class="viewjobft"><b>Default Profite Rates (%)</b></td>
+                            <td class="viewjobft"></td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-md-6 pull-right">
+                <table class="details-table table table-striped">
+                    <tbody>
+                        <tr class="project-overview greyback">
+                            <td class="viewjobft"><b>Model</b></td>
+                            <td class="viewjobft"></td>
+                        </tr>
+                        <tr class="project-overview">
+                            <td class="viewjobft"><b>Size</b></td>
+                            <td class="viewjobft"></td>
+                        </tr>
+                        <tr class="project-overview">
+                            <td class="viewjobft"><b>Unit</b></td>
+                            <td class="viewjobft"></td>
+                        </tr>
+                        <tr class="project-overview">
+                            <td class="viewjobft"><b>Purchase Price </b></td>
+                            <td class="viewjobft">0.00</td>
+                        </tr>
+                        <tr class="project-overview">
+                            <td class="viewjobft"><b>Warranty</b></td>
+                            <td class="viewjobft">Month</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <!-- --------- -->
+
+        <div class="col-lg-12">
+            <h4 style="font-size: 15px !important;  color: red;">
+                Description
+            </h4>
+        </div>
+        <hr style="color: red;">
+        <div class="col-lg-12">
+            <h4 style="font-size: 15px !important;  color: red;">
+                Long description
+            </h4>
+        </div>
+        <hr style="color: red;" class="mb-2">
+
+        <form action="" id="addlead10">
+            <div class=" container-fluid " style="padding-left: 0px !important; padding-right: 0px !important;">
+                <hr class="fileline   mb-0">
+                <div class="row vendcarmt ">
+                    <div class="col-md-12  ">
+                        <div class="desktop ">
+                            <div class="scroll-images custml toptea mt-0">
+
+                                <div class="child mb-0 mt-0">
+                                    <button class="tablinks tb-links active" type="button"
+                                        onclick="openTab(event, 'general')">Stock Inventory
+                                    </button>
+                                </div>
+
+                                <div class="child mb-0 mt-0">
+                                    <button class="tablinks tb-links" type="button"
+                                        onclick="openTab(event, 'general')">Expiry Date</button>
+                                </div>
+                                <div class="child mb-0 mt-0">
+                                    <button class="tablinks tb-links" type="button"
+                                        onclick="openTab(event, 'custom')">Transaction history</button>
+                                </div>
+
+                                <div class="child mb-0 mt-0">
+                                    <button class="tablinks tb-links" type="button"
+                                        onclick="openTab(event, 'custfield')">Custom fields
+                                    </button>
+                                </div>
+
+
+                                <div class="child mb-0 mt-0">
+                                    <button class="tablinks tb-links" type="button" onclick="openTab(event, 'five')">
+                                        Variants
+                                    </button>
+                                </div>
+
+
+                            </div>
+                        </div>
+                        <div id="carouselExampleIndicators" class="carousel slide" data-bs-interval="false"
+                            style="height: 50px;">
+                            <div class="carousel-inner scroll-images">
+
+                                <div class="carousel-item active" style="text-align: center;">
+                                    <div class="">
+                                        <div class="child mb-0  mt-0" style="height:auto; margin-top: 10px !important;">
+                                            <button class="tablinks active tabresact" style="width:70%" type="button"
+                                                onclick="openTab(event, 'general')"> Stock Inventory
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item" style="text-align: center; ">
+                                    <div class="">
+                                        <div class="child mb-0 mt-0" style="height:auto; margin-top: 10px !important;">
+                                            <button class="tablinks tabresact" style="width:70%" type="button"
+                                                onclick="openTab(event, ' general')">Expiry Date</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item" style="text-align: center; ">
+                                    <div class="">
+                                        <div class="child mb-0 mt-0" style="height:auto; margin-top: 10px !important;">
+                                            <button class="tablinks tabresact" style="width:70%" type="button"
+                                                onclick="openTab(event, ' custom')">Transaction history</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item" style="text-align: center;">
+                                    <div class="">
+                                        <div class="child mb-0 mt-0" style="height:auto; margin-top: 10px !important;">
+                                            <button class="tablinks tabresact" style="width:70%" type="button"
+                                                onclick="openTab(event, ' custfield')">Custom
+                                                fields</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item" style="text-align: center;">
+                                    <div class="">
+                                        <div class="child mb-0 mt-0" style="height:auto; margin-top: 10px !important;">
+                                            <button class="tablinks tabresact" style="width:70%" type="button"
+                                                onclick="openTab(event, ' five')">
+                                                Variants</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+                                <button id="prevButton" class="carousel-control-prev" style="margin-top: 10px;"
+                                    type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                                    <i class="bi bi-chevron-left icon" style="color:black;font-weight: bold;"></i>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+
+                                <button id="nextButton" class="carousel-control-next" style="margin-top: 10px;"
+                                    type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                                    <i class="bi bi-chevron-right icon" style="color:black;font-weight:bold"></i>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr class="fileline  mt-0 mb-0 ">
+
+                <!--------------------------- first ------------------------------------------->
+
+                <div id="general" class="tabcontent mt-0  " style="display:block;">
+
+                    <div class="demo-html mt-0 ms-1" style="padding-right: 2px !important;">
+                        <table id="example3" class="display dataTable display responsive nowrap  " style="width: 100%;"
+                            aria-describedby="example_info">
+                            <thead class="theadrow">
+                                <tr>
+                                    <th class="sorting" tabindex="0" aria-controls="example" rowspan="1" colspan="1"
+                                        aria-label="Position: activate to sort column ascending"
+                                        style="width: 30px;font-weight:normal ;">
+                                        Commodity Name
+                                    </th>
+                                    <th class="sorting" tabindex="0" aria-controls="example" rowspan="1" colspan="1"
+                                        aria-label="Office: activate to sort column ascending"
+                                        style="width: 40px;font-weight:normal ;">
+                                        Expiry Date</th>
+                                    <th class="sorting" tabindex="0" aria-controls="example" rowspan="1" colspan="1"
+                                        aria-label="Age: activate to sort column ascending"
+                                        style="width: 10px;font-weight:normal ;">
+                                        Lot number</th>
+                                    <th class="sorting" tabindex="0" aria-controls="example" rowspan="1" colspan="1"
+                                        aria-label="Age: activate to sort column ascending"
+                                        style="width: 40px;font-weight:normal ;">
+                                        Warehouse name </th>
+                                    <th class="sorting" tabindex="0" aria-controls="example" rowspan="1" colspan="1"
+                                        aria-label="Salary: activate to sort column ascending"
+                                        style="width: 30px;font-weight:normal ;">
+                                        Inventory</th>
+                                    <th class="sorting" tabindex="0" aria-controls="example" rowspan="1" colspan="1"
+                                        aria-label="Salary: activate to sort column ascending"
+                                        style="width: 30px;font-weight:normal ;">
+                                        Name</th>
+                                    <th class="sorting" tabindex="0" aria-controls="example" rowspan="1" colspan="1"
+                                        aria-label="Salary: activate to sort column ascending"
+                                        style="width: 30px;font-weight:normal ;">
+                                        Sale price</th>
+                                    <th class="sorting" tabindex="0" aria-controls="example" rowspan="1" colspan="1"
+                                        aria-label="Salary: activate to sort column ascending"
+                                        style="width: 30px;font-weight:normal; ">
+                                        Purchase price </th>
+                                    <th class="sorting" tabindex="0" aria-controls="example" rowspan="1" colspan="1"
+                                        aria-label="Age: activate to sort column ascending"
+                                        style="width: 10px;font-weight:normal ;">
+                                        Tax</th>
+                                    <th class="sorting" tabindex="0" aria-controls="example" rowspan="1" colspan="1"
+                                        aria-label="Age: activate to sort column ascending"
+                                        style="width: 40px;font-weight:normal ;">
+                                        Status </th>
+
+
+
+                                </tr>
+
+
+                            </thead>
+                            <tbody>
+
+
+                            </tbody>
+                        </table>
+                    </div>
+
+                </div>
+
+
+                <!--------------------------- second ------------------------------------------->
+                <div id="billing" class="tabcontent  mtgb mt-0">
+                    <div class="demo-html mt-0 ms-1" style="padding-right: 2px !important;">
+                        <table id="example2" class="display dataTable display responsive nowrap  " style="width: 100%;"
+                            aria-describedby="example_info">
+                            <thead class="theadrow">
+                                <tr>
+                                    <th class="sorting" tabindex="0" aria-controls="example" rowspan="1" colspan="1"
+                                        aria-label="Position: activate to sort column ascending"
+                                        style="width: 30px;font-weight:normal ;">
+                                        Commodity Name
+                                    </th>
+                                    <th class="sorting" tabindex="0" aria-controls="example" rowspan="1" colspan="1"
+                                        aria-label="Office: activate to sort column ascending"
+                                        style="width: 40px;font-weight:normal ;">
+                                        Expiry Date</th>
+                                    <th class="sorting" tabindex="0" aria-controls="example" rowspan="1" colspan="1"
+                                        aria-label="Age: activate to sort column ascending"
+                                        style="width: 10px;font-weight:normal ;">
+                                        Lot number</th>
+                                    <th class="sorting" tabindex="0" aria-controls="example" rowspan="1" colspan="1"
+                                        aria-label="Age: activate to sort column ascending"
+                                        style="width: 40px;font-weight:normal ;">
+                                        Warehouse name </th>
+                                    <th class="sorting" tabindex="0" aria-controls="example" rowspan="1" colspan="1"
+                                        aria-label="Salary: activate to sort column ascending"
+                                        style="width: 30px;font-weight:normal ;">
+                                        Inventory</th>
+                                    <th class="sorting" tabindex="0" aria-controls="example" rowspan="1" colspan="1"
+                                        aria-label="Salary: activate to sort column ascending"
+                                        style="width: 30px;font-weight:normal ;">
+                                        Name</th>
+                                    <th class="sorting" tabindex="0" aria-controls="example" rowspan="1" colspan="1"
+                                        aria-label="Salary: activate to sort column ascending"
+                                        style="width: 30px;font-weight:normal ;">
+                                        Sale price</th>
+                                    <th class="sorting" tabindex="0" aria-controls="example" rowspan="1" colspan="1"
+                                        aria-label="Salary: activate to sort column ascending"
+                                        style="width: 30px;font-weight:normal; ">
+                                        Purchase price </th>
+                                    <th class="sorting" tabindex="0" aria-controls="example" rowspan="1" colspan="1"
+                                        aria-label="Age: activate to sort column ascending"
+                                        style="width: 10px;font-weight:normal ;">
+                                        Tax</th>
+                                    <th class="sorting" tabindex="0" aria-controls="example" rowspan="1" colspan="1"
+                                        aria-label="Age: activate to sort column ascending"
+                                        style="width: 40px;font-weight:normal ;">
+                                        Status </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                            </tbody>
+                        </table>
+                    </div>
+
+                </div>
+                <!--------------------------- third ------------------------------------------->
+
+                <div id="custom" class="tabcontent  mt-0 ">
+                    <div class="demo-html mt-0 ms-1" style="padding-right: 2px !important;">
+                        <table id="example4" class="display dataTable display responsive nowrap  " style="width: 100%;"
+                            aria-describedby="example_info">
+                            <thead class="theadrow">
+                                <tr>
+                                    <th class="sorting" tabindex="0" aria-controls="example" rowspan="1" colspan="1"
+                                        aria-label="Position: activate to sort column ascending"
+                                        style="width: 30px;font-weight:normal ;">
+                                        Form code
+                                    </th>
+                                    <th class="sorting" tabindex="0" aria-controls="example" rowspan="1" colspan="1"
+                                        aria-label="Office: activate to sort column ascending"
+                                        style="width: 40px;font-weight:normal ;">
+                                        Commodity code</th>
+                                    <th class="sorting" tabindex="0" aria-controls="example" rowspan="1" colspan="1"
+                                        aria-label="Age: activate to sort column ascending"
+                                        style="width: 10px;font-weight:normal ;">
+                                        Warehouse code</th>
+                                    <th class="sorting" tabindex="0" aria-controls="example" rowspan="1" colspan="1"
+                                        aria-label="Age: activate to sort column ascending"
+                                        style="width: 40px;font-weight:normal ;">
+                                        Warehouse name </th>
+                                    <th class="sorting" tabindex="0" aria-controls="example" rowspan="1" colspan="1"
+                                        aria-label="Salary: activate to sort column ascending"
+                                        style="width: 30px;font-weight:normal ;">
+                                        Voucher Date</th>
+                                    <th class="sorting" tabindex="0" aria-controls="example" rowspan="1" colspan="1"
+                                        aria-label="Salary: activate to sort column ascending"
+                                        style="width: 30px;font-weight:normal ;">
+                                        Opening stock</th>
+                                    <th class="sorting" tabindex="0" aria-controls="example" rowspan="1" colspan="1"
+                                        aria-label="Salary: activate to sort column ascending"
+                                        style="width: 30px;font-weight:normal ;">
+                                        Closing stock</th>
+                                    <th class="sorting" tabindex="0" aria-controls="example" rowspan="1" colspan="1"
+                                        aria-label="Salary: activate to sort column ascending"
+                                        style="width: 30px;font-weight:normal; ">
+                                        Lot number/Qty </th>
+                                    <th class="sorting" tabindex="0" aria-controls="example" rowspan="1" colspan="1"
+                                        aria-label="Age: activate to sort column ascending"
+                                        style="width: 10px;font-weight:normal ;">
+                                        Expiry Date</th>
+                                    <!-- <th class="sorting" tabindex="0" aria-controls="example" rowspan="1" colspan="1"
+                                        aria-label="Age: activate to sort column ascending"
+                                        style="width: 40px;font-weight:normal ;">
+                                        Serial number </th>
+                                    <th class="sorting" tabindex="0" aria-controls="example" rowspan="1" colspan="1"
+                                        aria-label="Salary: activate to sort column ascending"
+                                        style="width: 30px;font-weight:normal ;">
+                                        Note</th>
+                                    <th class="sorting" tabindex="0" aria-controls="example" rowspan="1" colspan="1"
+                                        aria-label="Salary: activate to sort column ascending"
+                                        style="width: 30px;font-weight:normal; ">
+                                        Status </th> -->
+                                </tr>
+                            </thead>
+                            <tbody>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <!--------------------------- four ------------------------------------------->
+                <div id="custfield" class="tabcontent">
+                </div>
+
+                <!--------------------------- five ------------------------------------------->
+                <div id="five" class="tabcontent mt-0">
+                    <div class="demo-html mt-0 ms-1" style="padding-right: 2px !important;">
+                        <table id="example5" class="display dataTable display responsive nowrap  " style="width: 100%;"
+                            aria-describedby="example_info">
+                            <thead class="theadrow">
+                                <tr>
+                                    <th class="sorting" tabindex="0" aria-controls="example" rowspan="1" colspan="1"
+                                        aria-label="Position: activate to sort column ascending"
+                                        style="width: 30px;font-weight:normal ;">
+                                        <input class="check-input px-1 p-1" type="checkbox" value=""
+                                            id="flexCheckDefault">
+                                    </th>
+                                    <th class="sorting" tabindex="0" aria-controls="example" rowspan="1" colspan="1"
+                                        aria-label="Office: activate to sort column ascending"
+                                        style="width: 40px;font-weight:normal ;">
+                                        Images</th>
+                                    <th class="sorting" tabindex="0" aria-controls="example" rowspan="1" colspan="1"
+                                        aria-label="Age: activate to sort column ascending"
+                                        style="width: 10px;font-weight:normal ;">
+                                        Commodity code</th>
+                                    <th class="sorting" tabindex="0" aria-controls="example" rowspan="1" colspan="1"
+                                        aria-label="Age: activate to sort column ascending"
+                                        style="width: 40px;font-weight:normal ;">
+                                        Commodity name </th>
+                                    <th class="sorting" tabindex="0" aria-controls="example" rowspan="1" colspan="1"
+                                        aria-label="Salary: activate to sort column ascending"
+                                        style="width: 30px;font-weight:normal ;">
+                                        SKU Code</th>
+                                    <th class="sorting" tabindex="0" aria-controls="example" rowspan="1" colspan="1"
+                                        aria-label="Salary: activate to sort column ascending"
+                                        style="width: 30px;font-weight:normal ;">
+                                        Group name</th>
+                                    <th class="sorting" tabindex="0" aria-controls="example" rowspan="1" colspan="1"
+                                        aria-label="Salary: activate to sort column ascending"
+                                        style="width: 30px;font-weight:normal ;">
+                                        Warehouse name</th>
+                                    <th class="sorting" tabindex="0" aria-controls="example" rowspan="1" colspan="1"
+                                        aria-label="Salary: activate to sort column ascending"
+                                        style="width: 30px;font-weight:normal; ">
+                                        Tags </th>
+                                    <th class="sorting" tabindex="0" aria-controls="example" rowspan="1" colspan="1"
+                                        aria-label="Age: activate to sort column ascending"
+                                        style="width: 10px;font-weight:normal ;">
+                                        Inventory</th>
+                                    <th class="sorting" tabindex="0" aria-controls="example" rowspan="1" colspan="1"
+                                        aria-label="Age: activate to sort column ascending"
+                                        style="width: 40px;font-weight:normal ;">
+                                        Name </th>
+                                    <th class="sorting" tabindex="0" aria-controls="example" rowspan="1" colspan="1"
+                                        aria-label="Salary: activate to sort column ascending"
+                                        style="width: 30px;font-weight:normal ;">
+                                        Sale price</th>
+                                    <th class="sorting" tabindex="0" aria-controls="example" rowspan="1" colspan="1"
+                                        aria-label="Salary: activate to sort column ascending"
+                                        style="width: 30px;font-weight:normal ;">
+                                        Purchase price</th>
+                                    <th class="sorting" tabindex="0" aria-controls="example" rowspan="1" colspan="1"
+                                        aria-label="Salary: activate to sort column ascending"
+                                        style="width: 30px;font-weight:normal ;">
+                                        Tax1 </th>
+                                    <th class="sorting" tabindex="0" aria-controls="example" rowspan="1" colspan="1"
+                                        aria-label="Salary: activate to sort column ascending"
+                                        style="width: 30px;font-weight:normal ; text-align: left;">
+                                        Tax2 </th>
+                                    <th class="sorting" tabindex="0" aria-controls="example" rowspan="1" colspan="1"
+                                        aria-label="Salary: activate to sort column ascending"
+                                        style="width: 30px;font-weight:normal ;">
+                                        Status </th>
+                                    <th class="sorting" tabindex="0" aria-controls="example" rowspan="1" colspan="1"
+                                        aria-label="Salary: activate to sort column ascending"
+                                        style="width: 30px;font-weight:normal ;">
+                                        Minimum stock</th>
+                                    <th class="sorting" tabindex="0" aria-controls="example" rowspan="1" colspan="1"
+                                        aria-label="Salary: activate to sort column ascending"
+                                        style="width: 30px;font-weight:normal ;">
+                                        Maximum stock
+                                    </th>
+                                    <th class="sorting" tabindex="0" aria-controls="example" rowspan="1" colspan="1"
+                                        aria-label="Salary: activate to sort column ascending"
+                                        style="width: 30px;font-weight:normal ;">
+                                        Price after tax
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+        </form>
+    </div>
+
+    <div class="modal fade" id="modal_md" role="dialog">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close closebtn" data-bs-dismiss="modal"></button>
+                    <h5 class="modal-title"></h5>
+                </div>
+                <div class="modal-body">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- table  5 -->
+    <script>
+
+        $(document).ready(function () {
+
+
+            var table = $('#example5').DataTable({
+                rowReorder: {
+                    selector: 'td:nth-child(2)'
+                },
+                responsive: true,
+                dom: 'Blfrtip',
+                buttons: [
+                    {
+                        text: 'EXPORT',
+                        extend: 'collection',
+                        buttons: ['excel', 'csv', 'pdf', 'print'],
+                        className: 'px-3'
+
+                    },
+                    {
+                        text: '<button type="button" onclick="showModal( `view-manupal-p.html`,`Manipulation`)" style="font-size:12px; border:none;padding:0;background-color: inherit;">MANIPULATION</button>',
+                    },
+                    {
+                        text: '<button type="button"  style="font-size:12px; border:none;padding:0;background-color: inherit;">EXPORT THE SELECTED ITEM</button>',
+                    },
+                    {
+                        text: '<button type="button" onclick="showModal(`selc-item-pop.html`,`Barcode Printing`)" style="font-size:12px; border:none;padding:0;background-color: inherit;">BARCODE PRINTING </button>',
+                    },
+
+                    {
+                        text: '<i class="bi bi-arrow-repeat p-1" style="font-size:12px"></i>'
+                    }
+
+                ]
+
+            });
+
+        });
+    </script>
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js"></script>
+
+    <script>
+        function showModal(url, title) {
+            $('#modal_md').on('shown.bs.modal', function () {
+                $('.selectpicker').selectpicker('refresh');
+            });
+            $('#modal_md').modal('show', { backdrop: 'true' });
+            $.ajax({
+                url: url,
+                success: function (response) {
+                    $('#modal_md .modal-title').html(title);
+                    $('#modal_md .modal-body').html(response);
+                }
+            });
+        }
+
+    </script>
+    <!-- table  5 -->
+
+
+    <!-- table first-->
+    <script>
+
+        $(document).ready(function () {
+
+
+            var table = $('#example3').DataTable({
+                rowReorder: {
+                    selector: 'td:nth-child(2)'
+                },
+                responsive: true,
+                dom: 'Blfrtip',
+                buttons: [
+                    {
+                        text: 'EXPORT',
+                        extend: 'collection',
+                        buttons: ['excel', 'csv', 'pdf', 'print'],
+                        className: 'px-3'
+
+                    },
+
+
+                    {
+                        text: '<i class="bi bi-arrow-repeat p-1" style="font-size:12px"></i>'
+                    }
+
+                ]
+
+            });
+
+        });
+    </script>
+
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js"></script>
+
+    <script>
+        function showModal(url, title) {
+            $('#modal_md').on('shown.bs.modal', function () {
+                $('.selectpicker').selectpicker('refresh');
+            });
+            $('#modal_md').modal('show', { backdrop: 'true' });
+            $.ajax({
+                url: url,
+                success: function (response) {
+                    $('#modal_md .modal-title').html(title);
+                    $('#modal_md .modal-body').html(response);
+                }
+            });
+        }
+
+    </script>
+    <!-- table -->
+    <!-- table 2-->
+    <script>
+
+        $(document).ready(function () {
+
+
+            var table = $('#example2').DataTable({
+                rowReorder: {
+                    selector: 'td:nth-child(2)'
+                },
+                responsive: true,
+                dom: 'Blfrtip',
+                buttons: [
+                    {
+                        text: 'EXPORT',
+                        extend: 'collection',
+                        buttons: ['excel', 'csv', 'pdf', 'print'],
+                        className: 'px-3'
+
+                    },
+
+
+                    {
+                        text: '<i class="bi bi-arrow-repeat p-1" style="font-size:12px"></i>'
+                    }
+
+                ]
+
+            });
+
+        });
+    </script>
+
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js"></script>
+
+    <script>
+        function showModal(url, title) {
+            $('#modal_md').on('shown.bs.modal', function () {
+                $('.selectpicker').selectpicker('refresh');
+            });
+            $('#modal_md').modal('show', { backdrop: 'true' });
+            $.ajax({
+                url: url,
+                success: function (response) {
+                    $('#modal_md .modal-title').html(title);
+                    $('#modal_md .modal-body').html(response);
+                }
+            });
+        }
+
+    </script>
+    <!-- table -->
+
+
+    <!-- table  3-->
+
+    <script>
+
+        $(document).ready(function () {
+
+
+            var table = $('#example4').DataTable({
+                rowReorder: {
+                    selector: 'td:nth-child(2)'
+                },
+                responsive: true,
+                dom: 'Blfrtip',
+                buttons: [
+                    {
+                        text: 'EXPORT',
+                        extend: 'collection',
+                        buttons: ['excel', 'csv', 'pdf', 'print'],
+                        className: 'px-3'
+
+                    },
+                    {
+                        text: '<i class="bi bi-arrow-repeat p-1" style="font-size:12px"></i>'
+                    }
+
+                ]
+
+            });
+
+        });
+    </script>
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js"></script>
+
+    <script>
+        function showModal(url, title) {
+            $('#modal_md').on('shown.bs.modal', function () {
+                $('.selectpicker').selectpicker('refresh');
+            });
+            $('#modal_md').modal('show', { backdrop: 'true' });
+            $.ajax({
+                url: url,
+                success: function (response) {
+                    $('#modal_md .modal-title').html(title);
+                    $('#modal_md .modal-body').html(response);
+                }
+            });
+        }
+
+    </script>
+    <!-- table 3 -->
+
+
+
+    <!-- Modal script -->
+
+    <script>
+        function showMdModal(url, title) {
+
+            $('#modal_md').on('shown.bs.modal', function () {
+                $('.selectpicker').selectpicker('refresh');
+            });
+            $('#modal_md').modal('show', { backdrop: 'true' });
+            $.ajax({
+                url: url,
+                success: function (response) {
+                    $('#modal_md .modal-title').html(title);
+                    $('#modal_md .modal-body').html(response);
+                }
+            });
+        }
+    </script>
+
+
+    <script>
+        const dropdowns = document.querySelectorAll('.multiselect');
+
+        dropdowns.forEach(dropdown => {
+            const inputBox = document.createElement('input');
+            inputBox.type = 'hidden';
+            inputBox.classList.add('selected-values');
+            name = dropdown.getAttribute('data-name');
+            inputBox.setAttribute("name", name);
+            dropdown.after(inputBox);
+
+            dropdown.addEventListener('change', () => {
+                const selectedOptions = Array.from(dropdown.selectedOptions).map(option => option.value);
+                inputBox.value = selectedOptions.join(', ');
+            });
+        });
+    </script>
+    <script>
+
+
+        $(document).ready(function () {
+
+            var options = {
+                html: true,
+                title: "Optional: HELLO(Will overide the default-the inline title)",
+                //html element
+                //content: $("#popover-content")
+                content: $('[data-name="popover-content"]')
+                //Doing below won't work. Shows title only
+                //content: $("#popover-content").html()
+
+            }
+            var exampleEl = document.getElementById('example10')
+            var popover = new bootstrap.Popover(exampleEl, options)
+        })
+
+    </script>
+
+    <script>
+        function openTab(evt, tabName) {
+            // Declare all variables
+            var i, tabcontent, tablinks;
+
+            // Get all elements with class="tabcontent" and hide them
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+
+            // Get all elements with class="tablinks" and remove the class "active"
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+
+            // Show the current tab, and add an "active" class to the button that opened the tab
+            document.getElementById(tabName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+        var carousel = document.getElementById("carouselExampleIndicators");
+
+        carousel.addEventListener("slid.bs.carousel", function (event) {
+            var activeSlideIndex = event.to;
+            if (activeSlideIndex === 0) {
+
+                openTab(event, 'general');
+
+            }
+            else if (activeSlideIndex === 1) {
+
+                openTab(event, 'general');
+
+            }
+            else if (activeSlideIndex === 2) {
+
+                openTab(event, 'custom');
+
+            }
+            else if (activeSlideIndex === 3) {
+
+                openTab(event, 'custfield');
+
+            }
+            else if (activeSlideIndex === 4) {
+
+                openTab(event, 'five');
+
+            }
+        });
+
+
+
+    </script>
+
+    <!-- summernote -->
+    <script>
+        $('#summernote').summernote({
+            placeholder: '',
+            tabsize: 2,
+            height: 100
+        });
+    </script>
+    <script>
+        const dropZone = document.querySelector('#drop-zone');
+        const inputElement = document.querySelector('#myfile');
+        const img = document.querySelector('img');
+        const p = document.querySelector('.dropfile');
+        const fileNameElement = document.querySelector('.file-name');
+        const deleteButton = document.querySelector('#deleteBtn');
+
+        inputElement.addEventListener('change', function (e) {
+            const file = this.files[0];
+            if (file) {
+                img.style.display = "block";
+                p.style.display = 'none';
+                fileNameElement.textContent = file.name;
+                deleteButton.style.display = 'inline-block';
+
+                const reader = new FileReader();
+                reader.readAsDataURL(file);
+                reader.onloadend = function () {
+                    const src = this.result;
+                    img.src = src;
+                    img.alt = file.name;
+                }
+            }
+        });
+
+        dropZone.addEventListener('click', () => inputElement.click());
+        dropZone.addEventListener('dragover', (e) => {
+            e.preventDefault();
+        });
+
+        dropZone.addEventListener('drop', (e) => {
+            e.preventDefault();
+            img.style.display = "block";
+            const file = e.dataTransfer.files[0];
+            // p.style.display = 'none';
+
+            const reader = new FileReader();
+            reader.readAsDataURL(file);
+            reader.onloadend = function () {
+                e.preventDefault();
+                p.style.display = 'none';
+                fileNameElement.textContent = file.name;
+                deleteButton.style.display = 'inline-block';
+
+                const src = this.result;
+                img.src = src;
+                img.alt = file.name;
+            }
+        });
+
+        deleteButton.addEventListener('click', () => {
+            img.src = '';
+            img.style.display = 'none';
+            p.style.display = 'block';
+            fileNameElement.textContent = '';
+            deleteButton.style.display = 'none';
+            inputElement.value = '';
+        });
+    </script>
+
+
+
+
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,754 @@
+<form action="" id="addlead10">
+    <div class=" container-fluid ">
+        <hr class="fileline   " style="margin-top: 0px !important; margin-bottom: 0px !important;">
+        <div class="row vendcarmt">
+            <div class="col-md-12 ">
+                <div class="desktop">
+                    <div class="scroll-images custml toptea">
+                        <div class="child mb-0 mt-0">
+                            <button class="tablinks tb-links active" type="button"
+                                onclick="openTab(event, 'general')"><i class="fa-solid fa-bars"></i> General Details
+                            </button>
+                        </div>
+                        <div class="child mb-0 mt-0">
+
+                            <button class="tablinks tb-links" type="button" onclick="openTab(event, 'billing')"><i
+                                    class="fa-solid fa-user-group"></i>Properties</button>
+                        </div>
+                        <div class="child mb-0 mt-0">
+
+                            <button class="tablinks tb-links" type="button" onclick="openTab(event, 'custom')"><i
+                                    class="fa-solid fa-bars"></i>Variation</button>
+                        </div>
+                        <div class="child mb-0 mt-0">
+
+                            <button class="tablinks tb-links" type="button" onclick="openTab(event, 'custfield')"><i
+                                    class="fa-solid fa-bars"></i> Custom fields</button>
+                        </div>
+
+
+                    </div>
+                </div>
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-interval="false"
+                    style="height: 50px;">
+                    <div class="carousel-inner scroll-images">
+
+                        <div class="carousel-item active" style="text-align: center;">
+                            <div class="">
+                                <div class="child mb-0 mt-0 " style="height:auto; margin-top: 10px !important;">
+                                    <button class="tablinks active tabresact" style="width:70%" type="button"
+                                        onclick="openTab(event, 'general')"> <i class="fa-solid fa-bars"></i>General
+                                        Details </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item" style="text-align: center; ">
+                            <div class="">
+                                <div class="child mb-0 mt-0 " style="height:auto; margin-top: 10px !important;">
+                                    <button class="tablinks tabresact" style="width:70%" type="button"
+                                        onclick="openTab(event, 'billing')"><i
+                                            class="fa-solid fa-user-group"></i>Properties</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item" style="text-align: center;">
+                            <div class="">
+                                <div class="child mb-0 mt-0" style="height:auto; margin-top: 10px !important;">
+                                    <button class="tablinks tabresact" style="width:70%" type="button"
+                                        onclick="openTab(event, 'custom')"><i
+                                            class="fa-solid fa-bars"></i>Variation</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item" style="text-align: center;">
+                            <div class="">
+                                <div class="child mb-0 mt-0" style="height:auto; margin-top: 10px !important;">
+                                    <button class="tablinks tabresact" style="width:70%" type="button"
+                                        onclick="openTab(event, 'custfield')"><i class="fa-solid fa-bars"></i>Custom
+                                        fields</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <button id="prevButton" class="carousel-control-prev" style="margin-top: 10px;" type="button"
+                            data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                            <i class="bi bi-chevron-left icon" style="color:black;font-weight: bold;"></i>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+
+                        <button id="nextButton" class="carousel-control-next" style="margin-top: 10px;" type="button"
+                            data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                            <i class="bi bi-chevron-right icon" style="color:black;font-weight:bold"></i>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr class="fileline mt-0  ">
+
+
+        <!--------------------------- first ------------------------------------------->
+
+        <div id="general" class="tabcontent   " style="display:block;">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="purchasegrp">
+                        <label class="purchaseinfo"><span class=" aster">* </span> commodity code</label>
+                        <input type="text" class="form-control purchaseselects" name="Name">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="purchasegrp">
+                        <label class="purchaseinfo"><span class=" aster"> </span> commodity name</label>
+                        <input type="text" class="form-control purchaseselects">
+                    </div>
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="purchasegrp">
+                        <label class="purchaseinfo"><span class=" aster"> </span> Commodity Barcode</label>
+                        <input type="text" class="form-control purchaseselects">
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="purchasegrp">
+                        <span class="notifbtn pull-right" style="background-color: black;">?</span>
+                        <label class="purchaseinfo"><span class=" aster"> </span> SKU code</label>
+
+                        <input type="text" class="form-control purchaseselects">
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="purchasegrp">
+                        <label class="purchaseinfo"> SKU Name</label>
+                        <input type="text" class="form-control purchaseselects">
+                    </div>
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="purchasegrp tags">
+                        <label for="tags" class="purchaseinfo ">Tags</label>
+                        <i class="fa fa-tag"></i>
+                        <select class="selectpicker form-control " multiple>
+                            <option value="0">Set File</option>
+                            <option value="1">Upload Article</option>
+                            <option value="2">Wewer</option>
+                            <option value="3">Mangrove</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="purchasegrp">
+                        <label class="emailpro ">description</label>
+                        <textarea class="textdesc  " rows="4"></textarea>
+                    </div>
+                </div>
+            </div>
+            <div class="row ">
+                <div class="col-md-12">
+                    <div class="purchasegrp  ">
+                        <label for="tags" class="purchaseinfo mb-1">
+                            Warehouse name</label>
+                        <select class="selectpicker form-control" name="currency" data-live-search="true"
+                            placeholder=" none selected">
+                            <option value="36" data-subtext="GHS">GHS</option>
+                            <option value="38" data-subtext="MAD">MAD</option>
+                            <option value="41" data-subtext="¢">GHS</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="purchasegrp  ">
+                        <label for="tags" class="purchaseinfo mb-1">Commodities</label>
+                        <select class="selectpicker form-control" name="currency" data-live-search="true"
+                            placeholder=" none selected">
+                            <option value="36" data-subtext="GHS">GHS</option>
+                            <option value="38" data-subtext="MAD">MAD</option>
+                            <option value="41" data-subtext="¢">GHS</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="purchasegrp  ">
+                        <label for="tags" class="purchaseinfo mb-1" name="Name"><span class="aster">* </span>
+                            Units</label>
+                        <select class="selectpicker form-control" name="currency" data-live-search="true"
+                            placeholder=" none selected">
+                            <option value="36" data-subtext="GHS">GHS</option>
+                            <option value="38" data-subtext="MAD">MAD</option>
+                            <option value="41" data-subtext="¢">GHS</option>
+                        </select>
+                    </div>
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="purchasegrp  ">
+                        <label for="tags" class="purchaseinfo mb-1"><span class="aster"> </span>commodity
+                            group</label>
+                        <select class="selectpicker form-control" name="currency" data-live-search="true"
+                            placeholder=" none selected">
+                            <option value="36" data-subtext="GHS">GHS</option>
+                            <option value="38" data-subtext="MAD">MAD</option>
+                            <option value="41" data-subtext="¢">GHS</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="purchasegrp  ">
+                        <label for="tags" class="purchaseinfo mb-1">sub group</label>
+                        <select class="selectpicker form-control" name="currency" data-live-search="true"
+                            placeholder=" none selected">
+                            <option value="36" data-subtext="GHS">GHS</option>
+                            <option value="38" data-subtext="MAD">MAD</option>
+                            <option value="41" data-subtext="¢">GHS</option>
+                        </select>
+                    </div>
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="purchasegrp">
+                        <label class="purchaseinfo mb-1">
+                            Default Profit Rate (%)
+                        </label>
+                        <input type="number" class="selectpicker form-control" placeholder="0%">
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="purchasegrp  ">
+                        <label for="tags" class="purchaseinfo mb-1">tax 1</label>
+                        <select class="selectpicker form-control" name="currency" data-live-search="true"
+                            placeholder=" none selected">
+                            <option value="36" data-subtext="GHS">GHS</option>
+                            <option value="38" data-subtext="MAD">MAD</option>
+                            <option value="41" data-subtext="¢">GHS</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="purchasegrp  ">
+                        <label for="tags" class="purchaseinfo mb-1">tax2</label>
+                        <select class="selectpicker form-control" name="currency" data-live-search="true" disabled
+                            placeholder=" none selected">
+                            <option value="36" data-subtext="GHS">GHS</option>
+                            <option value="38" data-subtext="MAD">MAD</option>
+                            <option value="41" data-subtext="¢">GHS</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="purchasegrp">
+                        <label class="purchaseinfo mb-1"> purchase price
+                        </label>
+                        <input type="number" class="form-control purchaseselects">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="purchasegrp">
+                        <label class="purchaseinfo mb-1"><span class="aster">*</span> Sales price
+                        </label>
+                        <input type="number" class="form-control purchaseselects">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="">
+                        <div id="drop-zone">
+                            <img src="" alt="">
+                            <p class="dropfile">attach image</p>
+                            <label for="myfile" class="file-input-label">
+                                <input type="file" id="myfile">
+                            </label>
+
+                        </div>
+                        <div class="text-container">
+                            <div class="file-name"></div>
+                            <button class="delete-button btn-danger" id="deleteBtn">Delete</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="col-md-12 blkftr">
+                    <div class="modal-footer taskfooter">
+                        <button type="button" class="taskclose1" data-bs-dismiss="modal">
+                            CLOSE
+                        </button>
+                        <button type="submit" class="tasksave1">SAVE</button>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+
+        <!--------------------------- second ------------------------------------------->
+
+        <div id="billing" class="tabcontent  mtgb">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="purchasegrp">
+                        <label class="purchaseinfo"><span class=" aster"> </span> Origin</label>
+                        <input type="text" class="form-control purchaseselects">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="purchasegrp  ">
+                        <label for="tags" class="purchaseinfo mb-1"><span class="aster"> </span>styles</label>
+                        <select class="selectpicker form-control" name="currency" data-live-search="true"
+                            placeholder="None selected">
+                            <option value="36" data-subtext="GHS">GHS</option>
+                            <option value="38" data-subtext="MAD">MAD</option>
+                            <option value="41" data-subtext="¢">GHS</option>
+                        </select>
+                    </div>
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="purchasegrp  ">
+                        <label for="tags" class="purchaseinfo mb-1"><span class="aster"> </span>model</label>
+                        <select class="selectpicker form-control" name="currency" data-live-search="true"
+                            placeholder="None selected">
+                            <option value="36" data-subtext="GHS">GHS</option>
+                            <option value="38" data-subtext="MAD">MAD</option>
+                            <option value="41" data-subtext="¢">GHS</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="purchasegrp  ">
+                        <label for="tags" class="purchaseinfo mb-1"><span class="aster"> </span>sizes</label>
+                        <select class="selectpicker form-control" name="currency" data-live-search="true"
+                            placeholder="None selected">
+                            <option value="36" data-subtext="GHS">GHS</option>
+                            <option value="38" data-subtext="MAD">MAD</option>
+                            <option value="41" data-subtext="¢">GHS</option>
+                        </select>
+                    </div>
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="purchasegrp  ">
+                        <label for="tags" class="purchaseinfo mb-1"><span class="aster"> </span>color</label>
+                        <select class="selectpicker form-control" name="currency" data-live-search="true"
+                            placeholder="None selected">
+                            <option value="36" data-subtext="GHS">GHS</option>
+                            <option value="38" data-subtext="MAD">MAD</option>
+                            <option value="41" data-subtext="¢">GHS</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="purchasegrp">
+                        <label class="purchaseinfo"><span class=" aster"> </span> warrenty(month)</label>
+                        <input type="number" class="form-control purchaseselects">
+                    </div>
+                </div>
+
+            </div>
+            <div class="row checkk">
+                <div class="col-md-6">
+                    <div class="purchasegrp">
+                        <input class="form-check-input px-1 p-1" type="checkbox" value="" id="flexCheckDefault">
+
+                        Do not update inventory numbers<small> ( Stock quantity is not updated when an Inventory
+                            receipt
+                            or Inventory delivery is created for this item)</small>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <input class="form-check-input px-1 p-1" type="checkbox" value="" id="flexCheckDefault">
+                            Can be sold
+                        </div>
+                        <div class="col-md-6">
+                            <input class="form-check-input px-1 p-1" type="checkbox" value="" id="flexCheckDefault">
+                            Can be inventory
+                        </div>
+                    </div>
+
+                    <div class="row checkk">
+                        <div class="col-md-6 ">
+                            <input class="form-check-input px-1 p-1" type="checkbox" value="" id="flexCheckDefault">
+                            Can be purchased
+                        </div>
+                        <div class="col-md-6">
+                            <input class="form-check-input px-1 p-1" type="checkbox" value="" id="flexCheckDefault">
+                            Can be manufacturing
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="purchasegrp">
+                        <label for="name" class="emailpro">Long Description </label>
+                        <div id="summernote"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 blkftr">
+                    <div class="modal-footer taskfooter">
+                        <button type="button" class="taskclose1" data-bs-dismiss="modal">
+                            CLOSE
+                        </button>
+                        <button type="submit" class="tasksave1">SAVE</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--------------------------- third ------------------------------------------->
+
+
+        <div id="custom" class="tabcontent  ">
+            <div class="row">
+
+                <div id="parent" class="banking-parent" style="margin-top: 10px !important;">
+
+                    <div class="row mb-2">
+                        <div class="col-lg-7">
+                            <div class="purchasegrps">
+                                <label class="purchaseinfo mb-2 ">Variant
+                                    Name
+                                </label>
+                                <input type="text" class="selectpicker form-control">
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="purchasegrps">
+                                <label class="purchaseinfo mb-2"><span class="notifbtn"
+                                        style="background-color: black;">?</span> Variant Options
+                                </label>
+                                <input type="text" class="selectpicker form-control">
+                            </div>
+                        </div>
+
+                        <div class="col-lg-1 padtop25 mt-1">
+                            <div class="purchasegrps">
+                                <button id="sec_btn" name="add" class="ctctgrnbtn banking-plus-btn" data-ticket="true"
+                                    type="button"><i class="fa fa-plus"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12 blkftr">
+                    <div class="modal-footer taskfooter">
+                        <button type="button" class="taskclose1" data-bs-dismiss="modal">
+                            CLOSE
+                        </button>
+                        <button type="submit" class="tasksave1">SAVE</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <script>$(document).ready(function () {
+                $("#sec_btn").click(function () {
+                    $("#parent").append('   <div id="cold" class="row "><div class="col-lg-7"><div class="purchasegrps"> <label class="purchaseinfo mb-2">Variant Name </label> <input type="text" class="selectpicker form-control" name="third">  </div> </div >  <div class="col-lg-4">   <div class="purchasegrps">   <label class="purchaseinfo mb-2"><span class="notifbtn" style="background-color: black;">?</span> Variant Options  </label>   <input type="number" class="selectpicker form-control" placeholder="Status" name="third">  </div></div>  <div class="col-lg-1 padtop25  mt-1">  <div class="purchasegrps">  <button id="remove_btn" name="add" class="btn-danger banking-plus-btn" data-ticket="true"    type="button"><i class="fa fa-minus  "></i></button></div></div></div > ');
+                    $('.selectpicker').selectpicker('reresh')
+                });
+                $(document).on('click', '#remove_btn', function () {
+                    $(this).closest('#cold').remove();
+                });
+            });
+        </script>
+
+        <!--------------------------- four ------------------------------------------->
+        <div id="custfield" class="tabcontent">
+            <div class="row">
+                <div class="col-md-12 blkftr">
+                    <div class="modal-footer taskfooter">
+                        <button type="button" class="taskclose1" data-bs-dismiss="modal">
+                            CLOSE
+                        </button>
+                        <button type="submit" class="tasksave1">SAVE</button>
+                    </div>
+                </div>
+            </div>
+</form>
+
+
+<!-- Modal -->
+<div class="modal fade" id="modal_md" role="dialog">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="btn-close closebtn" data-bs-dismiss="modal"></button>
+                <h5 class="modal-title"></h5>
+            </div>
+            <div class="modal-body ">
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal script -->
+
+<script>
+    function showMdModal(url, title) {
+
+        $('#modal_md').on('shown.bs.modal', function () {
+            $('.selectpicker').selectpicker('refresh');
+        });
+        $('#modal_md').modal('show', { backdrop: 'true' });
+        $.ajax({
+            url: url,
+            success: function (response) {
+                $('#modal_md .modal-title').html(title);
+                $('#modal_md .modal-body').html(response);
+            }
+        });
+    }
+</script>
+<script>
+    $('#addlead10').formValidation({
+        framework: 'bootstrap',
+        fields: {
+
+
+            Name: {
+                validators: {
+                    notEmpty: {
+                        message: 'This field is required'
+                    }
+                }
+            },
+            demo_test_event: {
+                validators: {
+                    notEmpty: {
+                        message: 'Select demo test event'
+                    }
+                }
+            },
+        }
+    })
+
+</script>
+
+<script>
+    const dropdowns = document.querySelectorAll('.multiselect');
+
+    dropdowns.forEach(dropdown => {
+        const inputBox = document.createElement('input');
+        inputBox.type = 'hidden';
+        inputBox.classList.add('selected-values');
+        name = dropdown.getAttribute('data-name');
+        inputBox.setAttribute("name", name);
+        dropdown.after(inputBox);
+
+        dropdown.addEventListener('change', () => {
+            const selectedOptions = Array.from(dropdown.selectedOptions).map(option => option.value);
+            inputBox.value = selectedOptions.join(', ');
+        });
+    });
+</script>
+<script>
+
+
+    $(document).ready(function () {
+
+        var options = {
+            html: true,
+            title: "Optional: HELLO(Will overide the default-the inline title)",
+            //html element
+            //content: $("#popover-content")
+            content: $('[data-name="popover-content"]')
+            //Doing below won't work. Shows title only
+            //content: $("#popover-content").html()
+
+        }
+        var exampleEl = document.getElementById('example10')
+        var popover = new bootstrap.Popover(exampleEl, options)
+    })
+
+</script>
+
+<script>
+    function openTab(evt, tabName) {
+        // Declare all variables
+        var i, tabcontent, tablinks;
+
+        // Get all elements with class="tabcontent" and hide them
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+        }
+
+        // Get all elements with class="tablinks" and remove the class "active"
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+
+        // Show the current tab, and add an "active" class to the button that opened the tab
+        document.getElementById(tabName).style.display = "block";
+        evt.currentTarget.className += " active";
+    }
+    var carousel = document.getElementById("carouselExampleIndicators");
+
+    carousel.addEventListener("slid.bs.carousel", function (event) {
+        var activeSlideIndex = event.to;
+        if (activeSlideIndex === 0) {
+
+            openTab(event, 'general');
+
+        }
+        else if (activeSlideIndex === 1) {
+
+            openTab(event, 'billing');
+
+        }
+        else if (activeSlideIndex === 2) {
+
+            openTab(event, 'custom');
+
+        }
+        else if (activeSlideIndex === 3) {
+
+            openTab(event, 'custfield');
+
+        }
+    });
+
+
+
+</script>
+<script>
+    $(document).ready(function () {
+        var el1 = '<div class="col-lg-4 parent  mt-4"><div class="purchasegrps"><label class="">Attachment</label><div class="dropdown-with-icon"><input type="file" id="" name="file" class="form-control purchaseselect jobchse" value=""><button type="button" class="_delete image-plus select-container" style="background-color: #fc2d42;"><span class="input-group-addon"><i class="bi bi-dash-lg plus-green" style="background-color: #fc2d42;"></i></span></button></div></div></div>';
+        $("#addplusbtn").click(function () {
+            $("#parentbox").append(el1);
+        })
+        $(document).on('click', '._delete', function () {
+            $(this).closest('.parent').remove();
+        })
+    })
+</script>
+<script>$(document).ready(function () {
+        $("#add_btn").click(function () {
+            $("#parent").append('<div class="row appen"><div class="col-md-3"><div class="purchasegrp" class="selectpicker form-control" data-live-search="true"><label class="purchaseinfo"><span class=" aster">* </span> Variant Name</label> <input type="text" class="form-control purchaseselects"> </div> </div><div class="col-md-9"><div id="parent" class="banking-parent"><div class="row "><div class="col-md-7"><div class="purchasegrp" id="textArea1"><label class="emailpro "> <span class="notifbtn ">?</span>Variant options</label><textarea class="textdesc" rows="1" ></textarea></div></div><div class="col-md-1"><div class="purchasegrp "><button id="remove_btn" name="add" class="ctctgrnbtn  banking-min-btn " data-ticket="true" type="button"><i class="fa-solid fa-minus"></i></button></div></div></div></div></div></div> ');
+            $('.selectpicker').selectpicker('reresh')
+        });
+        $(document).on('click', '#remove_btn', function () {
+            $(this).closest('#coldiv').remove();
+        });
+    });
+</script>
+<script>
+    var el5 = '<div class="row "><div class="col-3"><div class="purchasegrp"> <input type="text" id="" class="form-control purchaseselects" placeholder="Enter asset name"></div></div><div class="col-2"><button onclick="erase2()" class="minusbtns setmartp"><i class="fa fa-minus"></i></button></div></div>';
+    function appen() {
+        $("#pbox").append(el5);
+    }
+    $(document).on('click', '.erase', function () {
+        $(this).closest("div.parent").remove();
+    });
+
+</script>
+<script>
+    $(document).ready(function () {
+        $("#add_btn1").click(function () {
+            $("#parent1").append('<div id="coldiv" class="col-md-4"><div class="chseexc"><label for="" class="purchaseinfo mb-1">Attachment</label><div class="input-group d-flex flex-nowrap"><input type="file" class="file_in"><span class="input-group-addon"><button id="remove_btn" type="button" class="ctctredbtn ctctgrnbtn"><i class="fa fa-minus"></i></button></span></div></div></div>');
+            $('.selectpicker').selectpicker('reresh')
+        });
+        $(document).on('click', '#remove_btn', function () {
+            $(this).closest('#coldiv').remove();
+        });
+    });
+</script>
+<!-- summernote -->
+<script>
+    $('#summernote').summernote({
+        placeholder: '',
+        tabsize: 2,
+        height: 100
+    });
+</script>
+<script>
+    const dropZone = document.querySelector('#drop-zone');
+    const inputElement = document.querySelector('#myfile');
+    const img = document.querySelector('img');
+    const p = document.querySelector('.dropfile');
+    const fileNameElement = document.querySelector('.file-name');
+    const deleteButton = document.querySelector('#deleteBtn');
+
+    inputElement.addEventListener('change', function (e) {
+        const file = this.files[0];
+        if (file) {
+            img.style.display = "block";
+            p.style.display = 'none';
+            fileNameElement.textContent = file.name;
+            deleteButton.style.display = 'inline-block';
+
+            const reader = new FileReader();
+            reader.readAsDataURL(file);
+            reader.onloadend = function () {
+                const src = this.result;
+                img.src = src;
+                img.alt = file.name;
+            }
+        }
+    });
+
+    dropZone.addEventListener('click', () => inputElement.click());
+    dropZone.addEventListener('dragover', (e) => {
+        e.preventDefault();
+    });
+
+    dropZone.addEventListener('drop', (e) => {
+        e.preventDefault();
+        img.style.display = "block";
+        const file = e.dataTransfer.files[0];
+        // p.style.display = 'none';
+
+        const reader = new FileReader();
+        reader.readAsDataURL(file);
+        reader.onloadend = function () {
+            e.preventDefault();
+            p.style.display = 'none';
+            fileNameElement.textContent = file.name;
+            deleteButton.style.display = 'inline-block';
+
+            const src = this.result;
+            img.src = src;
+            img.alt = file.name;
+        }
+    });
+
+    deleteButton.addEventListener('click', () => {
+        img.src = '';
+        img.style.display = 'none';
+        p.style.display = 'block';
+        fileNameElement.textContent = '';
+        deleteButton.style.display = 'none';
+        inputElement.value = '';
+    });
+</script>
